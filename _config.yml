@@ -1,0 +1,16 @@
+# Config do Jekyll — este site é HTML ESTÁTICO ESCRITO À MÃO.
+# Sem este arquivo o GitHub Pages serviria o playbook (CLAUDE.md) e as ferramentas.
+# Arquivo SEM front matter é copiado VERBATIM, então vale a doutrina:
+#   diff <(curl -s https://www.reservarhospedagem.app/index.html) index.html
+# Sem `plugins:` de propósito — o sitemap é gerado por CI (workflow seo.yml).
+
+url: "https://www.reservarhospedagem.app"
+
+exclude:
+  - CLAUDE.md
+  - README.md
+  - tools
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

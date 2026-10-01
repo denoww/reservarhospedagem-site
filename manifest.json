@@ -1,0 +1,13 @@
+{
+  "name": "reservarhospedagem",
+  "short_name": "reservarhospedagem",
+  "description": "Sistema para condomínios com Airbnb, hotéis e pousadas: site de reservas próprio, entrada com o rosto, limpeza por turnover e acerto com o proprietário.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#0F766E",
+  "icons": [
+    { "src": "/assets/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
