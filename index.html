@@ -178,6 +178,16 @@ section[id]{scroll-margin-top:64px}
 .faixa-fotos figure{margin:0}
 .faixa-fotos .foto{aspect-ratio:3/2;object-fit:cover}
 .faixa-fotos figcaption,.foto-hero figcaption{font-size:14px;color:var(--tinta-2);margin-top:10px}
+
+.rosto-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.rosto-foto{margin:0}.rosto-foto .foto{aspect-ratio:4/5;object-fit:cover;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.rosto-foto figcaption{font-size:13px;color:var(--claro-2);margin-top:10px}
+.escuro h2.rosto-h{font-size:clamp(34px,5vw,56px);line-height:1.04;letter-spacing:-.02em}
+.rosto-lista{list-style:none;padding:0;margin:30px 0 34px;display:grid;gap:20px}
+.rosto-lista li{padding-left:18px;border-left:2px solid var(--marca-clara);color:var(--claro-2);line-height:1.5}
+.rosto-lista b{display:block;color:var(--claro);font-weight:600;margin-bottom:2px}
+.faixa-fotos.una{grid-template-columns:1fr;max-width:720px;margin-left:auto;margin-right:auto}
+@media(max-width:860px){.rosto-grid{grid-template-columns:1fr;gap:36px}}
 @media(max-width:760px){.faixa-fotos{grid-template-columns:1fr}}
 .card-foto{display:block;max-width:none;width:calc(100% + 56px);margin:-28px -28px 20px;border-radius:28px 28px 0 0;aspect-ratio:4/3;object-fit:cover;object-position:50% 18%;height:auto}
 .hero{padding:88px 0 0}
@@ -295,6 +305,26 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
   </div>
 </header>
 
+<section id="rosto" class="escuro">
+  <div class="wrap rosto-grid">
+    <div>
+      <p class="olho rev">Check-in sem recepção</p>
+      <h2 class="rosto-h rev">O hóspede chega, olha para a porta e entra.</h2>
+      <p class="lead rev">Reservou, a credencial facial já está pronta. Sem chave para entregar e sem ninguém esperando na recepção às dez da noite.</p>
+      <ul class="rosto-lista rev">
+        <li><b>Nasce na confirmação.</b>Confirmada a reserva, o sistema libera a credencial facial. Ninguém cadastra à mão na portaria.</li>
+        <li><b>Vale só pela estadia.</b>Do check-in ao check-out, nos equipamentos de acesso que o condomínio já administra com a gente.</li>
+        <li><b>O hóspede se cadastra antes de chegar.</b>Envia documento e foto pelo link da reserva e chega já liberado.</li>
+      </ul>
+      <a class="btn" href="https://wa.me/5562985673142?text=Quero%20a%20entrada%20com%20o%20rosto%20no%20meu%20condom%C3%ADnio">Quero isso no meu condomínio</a>
+    </div>
+    <figure class="rosto-foto rev">
+      <img class="foto" src="/assets/rosto-destaque-560.jpg" srcset="/assets/rosto-destaque-560.jpg 560w, /assets/rosto-destaque-896.jpg 896w" sizes="(max-width:860px) 100vw, 480px" width="896" height="1088" alt="Hóspede de casaco escuro olha para o leitor facial discreto na parede teal ao lado da porta do apartamento" loading="lazy" decoding="async" />
+      <figcaption>Imagem ilustrativa.</figcaption>
+    </figure>
+  </div>
+</section>
+
 <section id="como">
   <div class="wrap">
     <p class="olho rev">O que roda hoje</p>
@@ -308,11 +338,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
       <div class="card rev"><h3>Quadro e calendário<span class="selo">tape-chart</span></h3><p>Quem está onde, quem chega, quem sai e o que está sujo ou pronto. Bloqueios de manutenção ou uso do proprietário entram como período.</p></div>
       <div class="card rev"><h3>Acerto com o proprietário</h3><p>Relatório por proprietário e período: receita, taxa de limpeza, retenção do condomínio e o líquido a repassar, em PDF. Você paga o PIX com a conta na mão.</p></div>
     </div>
-    <div class="faixa-fotos">
-      <figure class="rev">
-        <img class="foto" src="/assets/rosto-800.jpg" srcset="/assets/rosto-800.jpg 800w, /assets/rosto-1344.jpg 1344w" sizes="(max-width:760px) 100vw, 50vw" width="1344" height="768" alt="Hóspede com mala sorri para o leitor facial discreto na porta do apartamento" loading="lazy" decoding="async" />
-        <figcaption>Reserva confirmada, credencial liberada: o hóspede chega e entra com o rosto.</figcaption>
-      </figure>
+    <div class="faixa-fotos una">
       <figure class="rev">
         <img class="foto" src="/assets/limpeza-720.jpg" srcset="/assets/limpeza-720.jpg 720w, /assets/limpeza-1200.jpg 1200w" sizes="(max-width:760px) 100vw, 50vw" width="1200" height="821" alt="Camareira dobra toalhas brancas sobre a cama de um quarto claro" loading="lazy" decoding="async" />
         <figcaption>No checkout, a tarefa de limpeza nasce sozinha para a camareira.</figcaption>

@@ -41,3 +41,13 @@ Mesma anfitriã, cenário de hotel boutique (lobby/suíte com latão, boiserie, 
 | hero | 4 | 6 | corredor com portas de madeira escura; a chave tem gravação que lembra texto; fundo pouco sofisticado |
 | hero | 5 | 6,5 | ambiente elegante (nichos com LED, arco), mas a mão ficou com o dedo apontando para baixo da chave, deformada |
 | hero | **6** | **8** | **escolhida**: suíte de hotel com abajur de latão, boiserie e arco; rosto natural, mão e chave limpas, sem texto. Menos teal que a 1ª rodada, fica no neutro quente |
+
+## Seção "Check-in sem recepção" — foto de destaque (02/10/2026, pedido do Rodrigo: 'capriche na chamada e na foto')
+
+Vaga nova, 4:5, Ultra. 1ª rodada (3 cand.): cenário teal sofisticado, mas o hóspede de costas, sem rosto nem leitor — **reprovadas as três** (nota 4). 2ª rodada (US$ 0,42 perdidos por um prompt que não trocou; refeita): 
+
+| cand. | nota | motivo |
+|---|---|---|
+| **c1** | **7,5** | **escolhida**: parede teal com boiserie, o hóspede olha para o leitor facial (equipamento plausível, câmera visível); micro-texto ilegível sob o leitor |
+| c2 | 6,5 | retrato mais forte, mas o 'leitor' parece celular com interface alucinada; olha para a câmera, não para a porta |
+| c3 | 7 | leitor com texto no topo; perfil bom |
