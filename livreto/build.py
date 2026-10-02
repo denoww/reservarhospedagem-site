@@ -360,9 +360,9 @@ def build():
         "reais e fecha o pedido como pré-reserva, que a recepção confirma.",
         cards(C.SITE_CARDS, "petroleo"))
 
-    cap_estadia = chapter("estadia", "A estadia", "O hóspede entra com o rosto.",
-        "Onde o condomínio tem controle de acesso facial, a credencial do hóspede vale entre o check-in "
-        "e o check-out, no mesmo sistema da portaria.",
+    cap_estadia = chapter("estadia", "A estadia", "O hóspede entra no prédio com o rosto.",
+        "Onde o condomínio tem controle de acesso facial, o facial libera a entrada do prédio durante a "
+        "estadia. Na porta do quarto, vale a senha da fechadura ou a chave que o porteiro entrega.",
         cards(C.ESTADIA_CARDS, "petroleo"))
 
     cap_limpeza = chapter("limpeza", "A limpeza", "O checkout abre a tarefa.",
@@ -441,7 +441,7 @@ def build():
             f'<span>Livreto v{hoje} · {sha}</span></div></footer>')
 
     desc = ("Livreto do reservarhospedagem: preço por tipo de acomodação, site de reservas, acerto com "
-            "o proprietário, credencial facial por estadia e limpeza no checkout, para condomínios com "
+            "o proprietário, reconhecimento facial na entrada do prédio e limpeza no horário do checkout, para condomínios com "
             "temporada, flats, pousadas e hotéis pequenos.")
     url = f"{C.SITE}/livreto/"
     head = f'''<!doctype html>

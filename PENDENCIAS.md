@@ -34,3 +34,31 @@ apontou e que **não foi preenchida de propósito**, para não inventar fato.
    fotos geradas. O síndico quer ver a tela que vai usar.
 10. **Preço do channel manager/iCal** quando virarem produto (hoje a home diz, honestamente, que não existem).
 11. **Prova com número**, só quando houver número verificado (o guard `seo.py` reprova prova social inventada).
+
+
+---
+
+## Rodada de 02/10/2026 (tarde) — correção do acesso + juiz 2 (5/10 vendável)
+
+**Fato corrigido pelo Rodrigo:** o facial fica na **entrada do prédio**; na porta do quarto o sistema manda a **senha da
+fechadura** ao hóspede, ou, havendo **porteiro físico, o porteiro entrega a chave**. Site, FAQ, JSON-LD, demo e livreto
+foram reescritos assim. ⚠️ Esse fluxo (envio da senha da fechadura, chave pelo porteiro) veio do Rodrigo, **não de um
+roadmap**: o `ROADMAP_site_reservas_hospedagem.md` §1 e o `ROADMAP_meus_visitantes_como_hospedes.md` ainda falam em
+"credencial facial na porta" e precisam ser corrigidos/confirmados no código (qual integração de fechadura, o que o
+sistema realmente envia, em que momento).
+
+### Novas pendências (só o Rodrigo sabe)
+12. **Preço/forma do facial na entrada.** O site diz "falamos das opções no WhatsApp" porque não há valor: equipamento
+    de reconhecimento facial na portaria, instalação e mensalidade da portaria. O juiz apontou como P0 (o preço
+    publicado não cobre o diferencial do hero). Quando houver número, entra no card do #preco.
+13. **Razão social completa e CNPJ** no rodapé (hoje: "Seu Condomínio LTDA · Goiânia/GO", só o que consta no registro
+    do domínio). **Horário de atendimento** do WhatsApp.
+14. **"Unidade ativa" para quem só usa balcão, quadro e limpeza com o site de reservas desligado.** A definição aprovada
+    exige tipo de acomodação *publicado no site* — o livreto diz que o site "nasce desligado". Quem opera só no balcão
+    pagaria zero? Decidir a regra (não mudei a definição aprovada).
+15. **Prints reais** do quadro/acerto do piloto (dados borrados): o juiz acha que sem tela real o produto parece
+    inexistente. Substituiria as fotos geradas.
+16. **Selo "piloto" no hero:** entrou como frase ("O site de reservas e o acerto estão em piloto") e nos cards do
+    #ganha. Se o piloto virar produção, remover.
+17. **Limpeza no checkout:** o texto agora diz "no horário do checkout registrado" (o livreto admite que a leitura real da
+    saída pelo acesso ainda não dispara a limpeza — Onda 4.5 do roadmap operacional).

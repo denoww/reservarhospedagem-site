@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>reservarhospedagem — sistema para condomínios com Airbnb, hotéis e pousadas</title>
-<meta name="description" content="Sistema para condomínios com temporada, flats e pousadas, do Seu Condomínio: site de reservas próprio, entrada com o rosto, limpeza avisada na saída do hóspede e acerto com o proprietário. As 2 primeiras unidades são grátis." />
+<meta name="description" content="Sistema para condomínios com temporada, flats e pousadas, do Seu Condomínio: site de reservas próprio, entrada do prédio com reconhecimento facial, limpeza avisada no horário do checkout e acerto com o proprietário. As 2 primeiras unidades são grátis." />
 
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <link rel="canonical" href="https://www.reservarhospedagem.app/" />
@@ -17,7 +17,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="reservarhospedagem" />
 <meta property="og:title" content="reservarhospedagem — receba reservas no seu canal direto" />
-<meta property="og:description" content="Sistema para condomínios com temporada, flats e pousadas, do Seu Condomínio: site de reservas próprio, entrada com o rosto, limpeza avisada na saída do hóspede e acerto com o proprietário. As 2 primeiras unidades são grátis." />
+<meta property="og:description" content="Sistema para condomínios com temporada, flats e pousadas, do Seu Condomínio: site de reservas próprio, entrada do prédio com reconhecimento facial, limpeza avisada na saída do hóspede e acerto com o proprietário. As 2 primeiras unidades são grátis." />
 <meta property="og:url" content="https://www.reservarhospedagem.app/" />
 <meta property="og:locale" content="pt_BR" />
 <meta property="og:image" content="https://www.reservarhospedagem.app/assets/og.jpg" />
@@ -26,7 +26,7 @@
 <meta property="og:image:alt" content="reservarhospedagem.app — receba reservas no seu canal direto" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="reservarhospedagem — receba reservas no seu canal direto" />
-<meta name="twitter:description" content="Sistema para condomínios com temporada, flats e pousadas, do Seu Condomínio: site de reservas próprio, entrada com o rosto, limpeza avisada na saída do hóspede e acerto com o proprietário. As 2 primeiras unidades são grátis." />
+<meta name="twitter:description" content="Sistema para condomínios com temporada, flats e pousadas, do Seu Condomínio: site de reservas próprio, entrada do prédio com reconhecimento facial, limpeza avisada na saída do hóspede e acerto com o proprietário. As 2 primeiras unidades são grátis." />
 <meta name="twitter:image" content="https://www.reservarhospedagem.app/assets/og.jpg" />
 
 <script type="application/ld+json">
@@ -40,7 +40,7 @@
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
       "inLanguage": "pt-BR",
-      "description": "Sistema de gestão de hospedagem para condomínios que operam temporada, flats, hotéis e pousadas: site de reservas próprio, credencial facial por estadia, limpeza avisada na saída do hóspede e acerto com o proprietário."
+      "description": "Sistema de gestão de hospedagem para condomínios que operam temporada, flats, hotéis e pousadas: site de reservas próprio, reconhecimento facial na entrada do prédio, limpeza avisada no horário do checkout e acerto com o proprietário."
     },
     {
       "@type": "FAQPage",
@@ -74,7 +74,23 @@
           "name": "Como o hóspede entra no prédio?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ao confirmar a reserva, o sistema libera a credencial facial do hóspede com validade do check-in ao check-out, nos equipamentos de controle de acesso que o condomínio já administra com a gente."
+            "text": "Pelo reconhecimento facial na entrada do prédio. Ao confirmar a reserva, o sistema libera o hóspede nos equipamentos de controle de acesso que o condomínio já administra com a gente, para a estadia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como o hóspede entra no quarto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Na porta do quarto, o sistema envia a senha da fechadura ao hóspede. Se o prédio tem porteiro, o porteiro entrega a chave do quarto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "E a reserva que vem do Airbnb?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Você lança no balcão do sistema, e o quadro de hospedagem e o acesso do hóspede funcionam do mesmo jeito. O calendário do Airbnb não sincroniza sozinho: bloqueie as datas à mão."
           }
         },
         {
@@ -82,7 +98,7 @@
           "name": "Preciso ter controle de acesso facial?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A entrada pelo rosto depende de controle de acesso facial no mesmo sistema da portaria. As demais peças, como acomodações, tarifas, reservas, quadro de hospedagem e limpeza, são as que pousada pequena e flat usam."
+            "text": "O reconhecimento facial na entrada do prédio depende de controle de acesso facial no mesmo sistema da portaria. As demais peças, como acomodações, tarifas, reservas, quadro de hospedagem e limpeza, são as que pousada pequena e flat usam."
           }
         },
         {
@@ -90,7 +106,7 @@
           "name": "E a LGPD da foto do hóspede?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "O rosto do hóspede é dado sensível. A credencial facial vale apenas entre o check-in e o check-out. O texto de consentimento e a regra de retenção da foto devem ser validados com o jurídico do condomínio antes de operar."
+            "text": "O rosto do hóspede é dado sensível. A liberação da entrada vale para a estadia. O texto de consentimento e a regra de retenção da foto devem ser validados com o jurídico do condomínio antes de operar."
           }
         },
         {
@@ -224,7 +240,7 @@ section[id]{scroll-margin-top:64px}
 
 /* ── DEMO VIVA: a faixa de noites. HTML/CSS/JS, não vídeo ─────────────────────
    Mostra só o que o produto faz hoje: escolher noites no site, pedido de reserva,
-   confirmação que libera a credencial facial, checkout que dispara a limpeza. */
+   confirmação que libera o acesso, checkout que dispara a limpeza. */
 .demo{margin:56px auto 0;max-width:880px;background:#0b1f1d;border-radius:28px;padding:20px;color:#e6fffb}
 .demo-bar{display:flex;gap:8px;align-items:center;padding:4px 6px 16px;font-size:13px;color:#7fb8b1}
 .demo-bar i{width:10px;height:10px;border-radius:50%;background:#1f4a45;display:block}
@@ -276,7 +292,7 @@ details p{margin:12px 0 0;color:var(--tinta-2)}
 footer{background:var(--nevoa);padding:40px 0;font-size:14px;color:var(--tinta-2)}
 footer a{color:var(--tinta)}
 a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-offset:3px;border-radius:4px}
-@media(max-width:760px){:root{--respiro:72px}.hero{padding-top:56px}}
+@media(max-width:760px){:root{--respiro:72px}.hero{padding-top:56px}.foto-hero{margin-left:16px;margin-right:16px}.preco-faixas{grid-template-columns:1fr;gap:8px}.pf{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-radius:16px}.pf b{font-size:24px}.pf span{margin:0;text-align:right;font-size:14px}body{padding-bottom:84px}}
 
 /* ── vendas: dores, passos, quem, prova, preço, CTA fixo ─────────────────────── */
 .selo-casa{display:inline-block;font-size:13px;font-weight:600;color:var(--marca-esc);background:rgba(15,118,110,.1);border-radius:980px;padding:5px 12px;margin:0 0 14px}
@@ -341,11 +357,11 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
 <header class="hero" id="topo">
   <div class="wrap">
     <span class="selo-casa rev">do Seu Condomínio · para condomínios com Airbnb, flats e pousadas</span>
-    <h1 class="rev">Hóspede de Airbnb entrando sozinho, limpeza avisada e o proprietário recebendo a conta pronta.</h1>
-    <p class="lead rev">Sistema para condomínios com temporada, flats e pousadas, do Seu Condomínio. As 2 primeiras unidades são grátis.</p>
+    <h1 class="rev">Reserva direta, hóspede com acesso liberado e limpeza avisada — no mesmo sistema da portaria.</h1>
+    <p class="lead rev">Para condomínio com temporada, flat e pousada. Convive com o Airbnb: a reserva que vem de lá você lança no balcão. As 2 primeiras unidades são grátis. O site de reservas e o acerto estão em piloto.</p>
     <div class="acoes rev">
       <a class="btn" href="https://wa.me/5562985673142?text=Quero%20ver%20o%20reservarhospedagem%20funcionando%20no%20meu%20condom%C3%ADnio">Ver funcionando no WhatsApp</a>
-      <a class="btn btn-ghost" href="#como">Como funciona</a>
+      <a class="btn btn-ghost" href="#demo">Como funciona</a>
     </div>
     <figure class="demo rev" id="demo" aria-label="Demonstração animada do fluxo de uma reserva">
       <div class="demo-bar" aria-hidden="true"><i></i><i></i><i></i><span>seu-condominio.com.br/hospedagem</span></div>
@@ -358,17 +374,18 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
         <div class="lateral">
           <div class="passo" data-p="0"><span class="n">1</span><div><b>O hóspede escolhe as noites</b><span id="t0">3 noites · <span class="vl">R$ 1.230</span></span></div></div>
           <div class="passo" data-p="1"><span class="n">2</span><div><b>Chega o pedido de reserva</b><span>Você confirma no sistema e atribui a unidade.</span></div></div>
-          <div class="passo" data-p="2"><span class="n">3</span><div><b>A credencial facial é liberada</b><span>Válida do check-in ao check-out.</span></div></div>
-          <div class="passo" data-p="3"><span class="n">4</span><div><b>Na saída, a limpeza dispara</b><span>A unidade volta a ser vendável quando fica pronta.</span></div></div>
+          <div class="passo" data-p="2"><span class="n">3</span><div><b>O acesso é liberado</b><span>Facial na entrada do prédio; senha da fechadura ou chave no quarto.</span></div></div>
+          <div class="passo" data-p="3"><span class="n">4</span><div><b>No horário do checkout, a limpeza dispara</b><span>A unidade volta a ser vendável quando fica pronta.</span></div></div>
         </div>
       </div>
       <figcaption class="demo-leg">Exemplo ilustrativo. Datas, nomes e valores são fictícios.</figcaption>
     </figure>
+    <div class="cta-linha rev"><a class="btn" href="https://wa.me/5562985673142?text=Quero%20ver%20os%20quatro%20passos%20com%20os%20meus%20dados">Ver com os meus dados</a></div>
   </div>
 
     <figure class="foto-hero rev">
       <img class="foto" src="/assets/hero-1344.jpg" srcset="/assets/hero-800.jpg 800w, /assets/hero-1344.jpg 1344w" sizes="(max-width:1000px) 100vw, 960px" width="1344" height="768" alt="Anfitriã de blazer cinza estende uma chave dourada para a câmera, em uma suíte de hotel com abajur de latão e painéis claros ao fundo" decoding="async" />
-      <figcaption>Quem recebe o hóspede é você, e o hóspede reserva no seu site.</figcaption>
+      <figcaption>O hóspede reserva no seu site e recebe a senha da fechadura do quarto, ou a chave das mãos do porteiro.</figcaption>
     </figure>
   </div>
 </header>
@@ -380,26 +397,11 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
     <div class="dores">
       <div class="dor rev"><h3>A reserva chega pelo WhatsApp e a data é fechada numa planilha.</h3><p>No sistema, o pedido entra pelo seu site e a disponibilidade é conferida de novo no envio.</p></div>
       <div class="dor rev"><h3>O proprietário pergunta quanto ficou no mês.</h3><p>O acerto sai por proprietário e por período, em PDF, com a conta aberta.</p></div>
-      <div class="dor rev"><h3>O hóspede chega às 22h e não tem quem entregue a chave.</h3><p>A credencial facial já está pronta quando ele chega, sem ninguém esperando na recepção.</p></div>
-      <div class="dor rev"><h3>O apartamento foi liberado sujo porque ninguém viu o checkout.</h3><p>A saída abre a tarefa de limpeza, e a unidade só volta à venda depois de vistoriada.</p></div>
+      <div class="dor rev"><h3>O hóspede chega às 22h e não tem quem entregue a chave.</h3><p>O facial já libera a entrada do prédio, e a senha da fechadura do quarto chega pelo sistema. Se há porteiro, é ele quem entrega a chave.</p></div>
+      <div class="dor rev"><h3>O apartamento foi liberado sujo porque ninguém viu o checkout.</h3><p>No horário do checkout registrado, o sistema abre a tarefa de limpeza, e a unidade só volta à venda depois de vistoriada.</p></div>
       <div class="dor rev"><h3>A plataforma fica com uma fatia de cada diária e com o cadastro do hóspede.</h3><p>A reserva que chega pelo seu site é sua, sem comissão por reserva, e o cadastro fica no seu sistema.</p></div>
     </div>
     <div class="cta-linha rev"><a class="btn" href="https://wa.me/5562985673142?text=Reconheci%20minha%20opera%C3%A7%C3%A3o%20no%20site%20do%20reservarhospedagem">Conversar no WhatsApp</a></div>
-  </div>
-</section>
-
-<section id="como">
-  <div class="wrap">
-    <p class="olho rev">Como funciona</p>
-    <h2 class="rev">Da reserva à porta, em quatro passos.</h2>
-    <p class="lead rev">É o que a animação lá em cima mostra. Tudo no mesmo sistema da portaria.</p>
-    <div class="passos4">
-      <div class="p4 rev"><span class="n">1</span><h3>O hóspede escolhe as noites</h3><p>No seu site de reservas, com o preço do período já calculado.</p></div>
-      <div class="p4 rev"><span class="n">2</span><h3>Você confirma o pedido</h3><p>Ele chega como pré-reserva. Ao confirmar, a unidade é atribuída e a cobrança sai do sistema.</p></div>
-      <div class="p4 rev"><span class="n">3</span><h3>O rosto vira a chave</h3><p>A credencial facial nasce na confirmação e vale do check-in ao check-out.</p></div>
-      <div class="p4 rev"><span class="n">4</span><h3>Na saída, a limpeza é avisada</h3><p>A tarefa vai para a camareira, e a unidade só volta à venda quando está pronta.</p></div>
-    </div>
-    <div class="cta-linha rev"><a class="btn" href="https://wa.me/5562985673142?text=Quero%20ver%20os%20quatro%20passos%20com%20os%20meus%20dados">Ver com os meus dados</a></div>
   </div>
 </section>
 
@@ -407,19 +409,19 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
   <div class="wrap">
     <p class="olho rev">O que você ganha</p>
     <h2 class="rev">Da vitrine ao acerto, sem trocar de sistema.</h2>
-    <p class="lead rev">A reserva e a portaria falam a mesma língua. Por isso a credencial do hóspede nasce na confirmação, e a limpeza nasce na saída.</p>
+    <p class="lead rev">A reserva e a portaria falam a mesma língua. Por isso o acesso do hóspede nasce na confirmação, e a limpeza no horário do checkout.</p>
     <div class="grade">
-      <div class="card rev"><h3>Site de reservas próprio</h3><p>Uma página sua, com fotos, comodidades, política e perguntas frequentes por tipo de acomodação. Aparece nas buscas do Google e em respostas de assistentes de IA.</p></div>
+      <div class="card rev"><h3>Site de reservas próprio<span class="selo">piloto</span></h3><p>Uma página sua, com fotos, comodidades, política e perguntas frequentes por tipo de acomodação. O conteúdo já vem pronto no HTML, o que ajuda buscadores e assistentes a lerem.</p></div>
       <div class="card rev"><h3>Preço por tipo de acomodação</h3><p>Diária base, temporada, fim de semana, estadia mínima, taxa de limpeza e hóspede adicional. O preço está sempre certo: o sistema confere na hora do pedido.</p></div>
       <div class="card rev"><h3>Pedido que você confirma</h3><p>O site recebe o pedido como pré-reserva, que só vira reserva quando você confirma. Assim você não vende de novo uma noite já fechada no balcão.</p></div>
-      <div class="card rev"><h3>Limpeza avisada na saída do hóspede</h3><p>A saída gera a tarefa para a camareira, com checklist e foto, e o gestor confere à distância. A unidade só volta à venda quando está pronta.</p></div>
+      <div class="card rev"><h3>Limpeza avisada no checkout</h3><p>O checkout registrado gera a tarefa para a camareira, com checklist e foto, e o gestor confere à distância. A unidade só volta à venda quando está pronta.</p></div>
       <div class="card rev"><h3>Quadro de hospedagem</h3><p>Quem está onde, quem chega, quem sai e o que está sujo ou pronto. Manutenção ou uso do proprietário entram como período bloqueado.</p></div>
-      <div class="card rev"><h3>Acerto com o proprietário</h3><p>Relatório por proprietário e período: receita, taxa de limpeza, retenção do condomínio e o líquido a repassar, em PDF. Você paga o PIX com a conta na mão.</p></div>
+      <div class="card rev"><h3>Acerto com o proprietário<span class="selo">piloto</span></h3><p>Relatório por proprietário e período: receita, taxa de limpeza, retenção do condomínio e o líquido a repassar, em PDF. Você paga o PIX com a conta na mão.</p></div>
     </div>
     <div class="faixa-fotos una">
       <figure class="rev">
         <img class="foto" src="/assets/limpeza-720.jpg" srcset="/assets/limpeza-720.jpg 720w, /assets/limpeza-1200.jpg 1200w" sizes="(max-width:760px) 100vw, 50vw" width="1200" height="821" alt="Camareira dobra toalhas brancas sobre a cama de um quarto claro" loading="lazy" decoding="async" />
-        <figcaption>Na saída do hóspede, a tarefa de limpeza nasce sozinha para a camareira.</figcaption>
+        <figcaption>No horário do checkout, a tarefa de limpeza nasce sozinha para a camareira.</figcaption>
       </figure>
     </div>
   </div>
@@ -428,35 +430,20 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
 <section id="rosto" class="escuro">
   <div class="wrap rosto-grid">
     <div>
-      <p class="olho rev">Check-in sem recepção</p>
-      <h2 class="rosto-h rev">O hóspede chega, olha para a porta e entra.</h2>
-      <p class="lead rev">Reservou, a credencial facial já está pronta. Sem chave para entregar e sem ninguém esperando na recepção às dez da noite.</p>
+      <p class="olho rev">Entrada do prédio sem recepção</p>
+      <h2 class="rosto-h rev">O hóspede chega, olha para a câmera e entra no prédio.</h2>
+      <p class="lead rev">Reservou, o acesso já está pronto. Ninguém esperando na recepção às dez da noite: o rosto abre a entrada do prédio, e a porta do quarto abre com senha ou chave.</p>
       <ul class="rosto-lista rev">
-        <li><b>Nasce na confirmação.</b>Confirmada a reserva, o sistema libera a credencial facial. Ninguém cadastra à mão na portaria.</li>
-        <li><b>Vale só pela estadia.</b>Do check-in ao check-out, nos equipamentos de acesso que o condomínio já administra com a gente.</li>
+        <li><b>Entrada do prédio pelo rosto.</b>Confirmada a reserva, o hóspede é liberado no reconhecimento facial da portaria durante a estadia, nos equipamentos que o condomínio já administra com a gente.</li>
+        <li><b>Porta do quarto: senha ou chave.</b>O sistema envia a senha da fechadura ao hóspede. Se o prédio tem porteiro, é ele quem entrega a chave do quarto.</li>
         <li><b>O hóspede se cadastra antes de chegar.</b>Envia documento e foto pelo link da reserva e chega já liberado.</li>
       </ul>
-      <a class="btn" href="https://wa.me/5562985673142?text=Quero%20a%20entrada%20com%20o%20rosto%20no%20meu%20condom%C3%ADnio">Quero isso no meu condomínio</a>
+      <a class="btn" href="https://wa.me/5562985673142?text=Quero%20o%20reconhecimento%20facial%20na%20entrada%20do%20meu%20pr%C3%A9dio">Quero isso no meu condomínio</a>
     </div>
     <figure class="rosto-foto rev">
-      <img class="foto" src="/assets/rosto-destaque-560.jpg" srcset="/assets/rosto-destaque-560.jpg 560w, /assets/rosto-destaque-896.jpg 896w" sizes="(max-width:860px) 100vw, 480px" width="896" height="1088" alt="Terminal de reconhecimento facial na parede ao lado da porta: tela com o rosto do hóspede, câmera no topo e módulo de leitura" loading="lazy" decoding="async" />
-      <figcaption>Imagem ilustrativa do equipamento de reconhecimento facial na porta.</figcaption>
+      <img class="foto" src="/assets/rosto-destaque-560.jpg" srcset="/assets/rosto-destaque-560.jpg 560w, /assets/rosto-destaque-896.jpg 896w" sizes="(max-width:860px) 100vw, 480px" width="896" height="1088" alt="Terminal de reconhecimento facial na entrada do prédio: tela com o rosto do hóspede, câmera no topo e módulo de leitura" loading="lazy" decoding="async" />
+      <figcaption>Imagem ilustrativa do terminal de reconhecimento facial na entrada do prédio.</figcaption>
     </figure>
-  </div>
-</section>
-
-<section id="quem">
-  <div class="wrap">
-    <p class="olho rev">Para quem é</p>
-    <h2 class="rev">Quem hospeda e já responde pela porta.</h2>
-    <div class="quem3">
-      <div class="card rev"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="6" width="28" height="36" rx="3"/><path d="M17 14h4M27 14h4M17 22h4M27 22h4M17 30h4M27 30h4M21 42v-6h6v6"/></svg><h3>Condomínio que opera temporada</h3><p>Prédio com unidades de Airbnb, em que a administração cuida da entrada, da limpeza e do repasse aos proprietários. É o nosso ponto de partida.</p></div>
-      <div class="card rev"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 22 24 8l18 14M12 20v22h24V20M20 42V30h8v12"/></svg><h3>Hotel e pousada pequena</h3><p>Poucos quartos, equipe enxuta e vontade de vender direto. Acomodações, tarifas, reservas e quadro de hospedagem no mesmo lugar.</p></div>
-      <div class="card rev"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="15" cy="24" r="8"/><path d="M23 24h19M36 24v7M42 24v5"/></svg><h3>Flat, condo-hotel e chalés</h3><p>Operação em que o gestor aluga por conta de vários donos e precisa provar quanto cada um recebeu.</p></div>
-    </div>
-    <p class="requisito rev"><b>Sobre a entrada pelo rosto:</b> ela depende de controle de acesso facial no mesmo sistema da portaria. Acomodações, tarifas, reservas, quadro e limpeza são as peças que pousada pequena e flat usam.</p>
-    <p class="rev" style="margin-top:20px;font-size:15px;color:var(--tinta-2);max-width:62ch">Atenção à convenção: alguns condomínios proíbem locação por temporada. Se o seu proíbe, este sistema não é para o seu caso.</p>
-    <div class="cta-linha rev"><a class="btn" href="https://wa.me/5562985673142?text=Quero%20saber%20se%20o%20reservarhospedagem%20serve%20para%20a%20minha%20opera%C3%A7%C3%A3o">Ver se serve para mim</a></div>
   </div>
 </section>
 
@@ -477,6 +464,21 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
   </div>
 </section>
 
+<section id="quem">
+  <div class="wrap">
+    <p class="olho rev">Para quem é</p>
+    <h2 class="rev">Quem hospeda e já responde pela porta.</h2>
+    <div class="quem3">
+      <div class="card rev"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="6" width="28" height="36" rx="3"/><path d="M17 14h4M27 14h4M17 22h4M27 22h4M17 30h4M27 30h4M21 42v-6h6v6"/></svg><h3>Condomínio que opera temporada</h3><p>Prédio com unidades de Airbnb, em que a administração cuida da entrada, da limpeza e do repasse aos proprietários. É o nosso ponto de partida.</p></div>
+      <div class="card rev"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 22 24 8l18 14M12 20v22h24V20M20 42V30h8v12"/></svg><h3>Hotel e pousada pequena</h3><p>Poucos quartos, equipe enxuta e vontade de vender direto. Acomodações, tarifas, reservas e quadro de hospedagem no mesmo lugar.</p></div>
+      <div class="card rev"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="15" cy="24" r="8"/><path d="M23 24h19M36 24v7M42 24v5"/></svg><h3>Flat, condo-hotel e chalés</h3><p>Operação em que o gestor aluga por conta de vários donos e precisa provar quanto cada um recebeu.</p></div>
+    </div>
+    <p class="requisito rev"><b>Sobre o reconhecimento facial:</b> ele fica na entrada do prédio e depende de controle de acesso facial no mesmo sistema da portaria. Na porta do quarto, vale a senha da fechadura ou a chave com o porteiro. Acomodações, tarifas, reservas, quadro e limpeza são as peças que pousada pequena e flat usam.</p>
+    <p class="rev" style="margin-top:20px;font-size:15px;color:var(--tinta-2);max-width:62ch">Atenção à convenção: alguns condomínios proíbem locação por temporada. Se o seu proíbe, este sistema não é para o seu caso.</p>
+    <div class="cta-linha rev"><a class="btn" href="https://wa.me/5562985673142?text=Quero%20saber%20se%20o%20reservarhospedagem%20serve%20para%20a%20minha%20opera%C3%A7%C3%A3o">Ver se serve para mim</a></div>
+  </div>
+</section>
+
 <section id="preco" class="escuro">
   <div class="wrap">
     <p class="olho rev">Quanto custa e como começar</p>
@@ -489,6 +491,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
       <div class="pf"><b class="num">R$&nbsp;1,90</b><span>por unidade, da 31ª em diante</span></div>
     </div>
     <ul class="preco-sem rev"><li>Sem taxa de implantação</li><li>Sem fidelidade</li><li>Sem comissão sobre as reservas do seu site</li></ul>
+    <p class="preco-def rev"><b>Entrada do prédio com facial.</b> O valor acima é do sistema de hospedagem. O reconhecimento facial na entrada depende de controle de acesso facial na portaria; falamos das opções no WhatsApp.</p>
     <p class="preco-def rev"><b>O que é unidade ativa?</b> É a unidade ligada a um tipo de acomodação publicado no seu site e à venda em pelo menos um dia do mês. Apartamento cadastrado que não está à venda não paga: um condomínio com 80 apartamentos e 6 no Airbnb paga por 6.</p>
     <div class="conta rev" style="color:var(--tinta)">
       <table aria-label="Exemplos de mensalidade">
@@ -529,10 +532,12 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
     <h2 class="rev">Perguntas frequentes</h2>
     <details><summary>Quanto custa?</summary><p>Cobrança por unidade ativa, por mês: as 2 primeiras são grátis, da 3ª à 10ª são R$ 4,90 cada, da 11ª à 30ª são R$ 2,90 e da 31ª em diante R$ 1,90. Sem taxa de implantação, sem fidelidade e sem comissão sobre as reservas do seu site. Unidade ativa é a que está ligada a um tipo de acomodação publicado no site e à venda em pelo menos um dia do mês.</p></details>
     <details><summary>Preciso sair do Airbnb para usar o reservarhospedagem?</summary><p>Não. O caminho é migrar uma fração das reservas para o seu site, mantendo as demais onde estão. Como o calendário do site é o nosso e ainda não conversa com o de outras plataformas, as datas vendidas fora precisam ser bloqueadas à mão.</p></details>
+    <details><summary>E a reserva que vem do Airbnb?</summary><p>Você lança no balcão do sistema, e o quadro de hospedagem e o acesso do hóspede funcionam do mesmo jeito. O calendário do Airbnb não sincroniza sozinho: bloqueie as datas à mão.</p></details>
     <details><summary>O hóspede paga online no site?</summary><p>Ainda não. O site fecha um pedido de reserva; você confirma no sistema, a cobrança é gerada e o link vai para o hóspede. O pagamento automático dentro do site não existe hoje.</p></details>
-    <details><summary>Como o hóspede entra no prédio?</summary><p>Ao confirmar a reserva, o sistema libera a credencial facial do hóspede com validade do check-in ao check-out, nos equipamentos de controle de acesso que o condomínio já administra com a gente.</p></details>
-    <details><summary>Preciso ter controle de acesso facial?</summary><p>A entrada pelo rosto depende de controle de acesso facial no mesmo sistema da portaria. As demais peças, como acomodações, tarifas, reservas, quadro de hospedagem e limpeza, são as que pousada pequena e flat usam.</p></details>
-    <details><summary>E a LGPD da foto do hóspede?</summary><p>O rosto do hóspede é dado sensível. A credencial facial vale apenas entre o check-in e o check-out. O texto de consentimento e a regra de retenção da foto devem ser validados com o jurídico do condomínio antes de operar.</p></details>
+    <details><summary>Como o hóspede entra no prédio?</summary><p>Pelo reconhecimento facial na entrada do prédio. Ao confirmar a reserva, o sistema libera o hóspede nos equipamentos de controle de acesso que o condomínio já administra com a gente, para a estadia.</p></details>
+    <details><summary>Como o hóspede entra no quarto?</summary><p>Na porta do quarto, o sistema envia a senha da fechadura ao hóspede. Se o prédio tem porteiro, o porteiro entrega a chave do quarto.</p></details>
+    <details><summary>Preciso ter controle de acesso facial?</summary><p>O reconhecimento facial na entrada do prédio depende de controle de acesso facial no mesmo sistema da portaria. As demais peças, como acomodações, tarifas, reservas, quadro de hospedagem e limpeza, são as que pousada pequena e flat usam.</p></details>
+    <details><summary>E a LGPD da foto do hóspede?</summary><p>O rosto do hóspede é dado sensível. A liberação da entrada vale para a estadia. O texto de consentimento e a regra de retenção da foto devem ser validados com o jurídico do condomínio antes de operar.</p></details>
     <details><summary>Serve para hotel e pousada, ou só para condomínio?</summary><p>Serve para os dois. O ponto de partida é o condomínio que opera temporada, mas pousada pequena, flat e clube com chalés usam as mesmas peças: acomodações, tarifas, reservas, quadro de hospedagem e limpeza.</p></details>
     <details><summary>Como funciona o repasse ao proprietário da unidade?</summary><p>O condomínio recebe a reserva e depois repassa ao proprietário. O sistema monta um relatório de acerto por proprietário e período, com receita, taxa de limpeza, retenção do condomínio e o líquido a repassar. O PIX é feito por você.</p></details>
   </div>
@@ -556,7 +561,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
 
 <footer>
   <div class="wrap">
-    reservarhospedagem.app · parte da família <a href="https://www.seucondominio.com.br">Seu Condomínio</a> · <a href="/livreto/">Livreto</a> · <a href="/privacidade">Privacidade</a> · <a href="https://wa.me/5562985673142">WhatsApp</a>
+    reservarhospedagem.app · um produto da <a href="https://www.seucondominio.com.br">Seu Condomínio</a> LTDA · Goiânia/GO · <a href="/livreto/">Livreto</a> · <a href="/privacidade">Privacidade</a> · <a href="https://wa.me/5562985673142">WhatsApp</a>
   </div>
 </footer>
 
@@ -591,7 +596,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
     marca('sel',p===0||p===1);
     marca('conf',p>=2);
     if(p>=2) marca('sel',false);
-    sub.textContent=['Escolha as noites','Pedido recebido','Credencial liberada até o check-out','Saída feita · unidade em limpeza'][p];
+    sub.textContent=['Escolha as noites','Pedido recebido','Acesso liberado para a estadia','Checkout registrado · unidade em limpeza'][p];
     if(p===3){cel[SAI-1].classList.remove('conf');cel[SAI-1].classList.add('sel')}
   }
   var p=-1,timer=null;

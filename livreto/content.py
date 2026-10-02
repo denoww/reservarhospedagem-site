@@ -29,9 +29,10 @@ SITE = "https://www.reservarhospedagem.app"
 
 HERO = {
     "eyebrow": "Livreto",
-    "h1": "Receba reservas no seu canal direto.",
+    "h1": "Reserva direta, hóspede com acesso liberado e limpeza avisada.",
     "sub": "Preço por tipo de acomodação, pedido de reserva no seu site, acerto com o proprietário, "
-           "hóspede que entra com o rosto e limpeza que dispara no checkout. Para condomínios que "
+           "entrada do prédio com reconhecimento facial e limpeza avisada no horário do checkout. "
+           "Convive com o Airbnb: a reserva que vem de lá você lança no balcão. Para condomínios que "
            "operam temporada, flats, pousadas e hotéis pequenos — tudo no mesmo sistema da portaria.",
 }
 
@@ -44,9 +45,9 @@ BOARDS = {
     "reserva": ("terra", "Do pedido ao hóspede dentro do apartamento", [
         ("calendario", "O hóspede pede",       "Escolhe as noites no site e envia o pedido com documento e foto."),
         ("balcao",     "A recepção confirma",  "Atribui a unidade e confirma. O pedido vira reserva."),
-        ("face",       "O acesso nasce",       "A credencial facial vale só entre o check-in e o check-out."),
-        ("porta",      "Entra com o rosto",    "Sem recepção, sem chave, sem código de cofre."),
-        ("vassoura",   "Sai e a limpeza dispara", "O checkout abre a tarefa para a camareira."),
+        ("face",       "O acesso nasce",       "Confirmada a reserva, o facial libera a entrada do prédio durante a estadia."),
+        ("porta",      "Entra no prédio e no quarto", "Facial na entrada; no quarto, a senha da fechadura ou a chave com o porteiro."),
+        ("vassoura",   "No checkout, a limpeza dispara", "No horário registrado, a tarefa vai para a camareira."),
         ("chave",      "Unidade pronta",       "Vistoriada, volta para a venda."),
     ]),
     "acerto": ("petroleo", "Do dinheiro que entrou ao PIX do proprietário", [
@@ -57,7 +58,7 @@ BOARDS = {
         ("pdf",     "PDF para conferir",   "O documento que acompanha o PIX e responde a dúvida."),
     ]),
     "limpeza": ("ambar", "Do checkout à unidade pronta", [
-        ("porta",   "O hóspede sai",       "O checkout abre a tarefa de limpeza sozinho."),
+        ("porta",   "Chega o horário do checkout", "O sistema abre a tarefa de limpeza sozinho."),
         ("vassoura","A camareira limpa",   "Recebe a tarefa e roda o checklist no celular."),
         ("foto",    "Foto por etapa",      "A evidência fica registrada com data e hora."),
         ("lupa",    "A vistoria à distância", "O gestor confere pelas fotos, sem ir ao local."),
@@ -127,12 +128,15 @@ SITE_CARDS = [
 ]
 
 ESTADIA_CARDS = [
-    ("Credencial só durante a estadia",
-     "A facial do hóspede é provisionada com validade exata entre o check-in e o check-out, no "
-     "equipamento do condomínio. Passou do prazo, deixa de abrir.", ""),
+    ("Entrada do prédio só durante a estadia",
+     "A liberação facial do hóspede vale para a estadia, no equipamento de controle de acesso do "
+     "condomínio, na entrada do prédio. Passou do prazo, deixa de abrir.", ""),
+    ("Porta do quarto: senha ou chave",
+     "O sistema envia a senha da fechadura ao hóspede. Se o prédio tem porteiro, é o porteiro "
+     "quem entrega a chave do quarto.", ""),
     ("Cadastro antes de chegar",
      "O hóspede preenche documento e foto por um link, antes de chegar. Na chegada, ele entra com "
-     "o rosto, sem passar pela recepção.", ""),
+     "o rosto na portaria, sem passar pela recepção.", ""),
     ("Voucher em PDF",
      "A estadia tem voucher com os dados da reserva e da unidade, para quem precisa de um papel.", ""),
     ("Tudo no mesmo sistema da portaria",
@@ -204,7 +208,7 @@ DORES = [
     "A reserva chega pelo WhatsApp, a data é fechada na planilha e alguém esquece de atualizar a outra aba.",
     "O proprietário pergunta quanto ficou no mês e a resposta depende de somar três planilhas.",
     "O hóspede chega às 22h e não tem quem entregue a chave.",
-    "O hóspede pediu mais dois dias e, na manhã seguinte, a credencial recusa.",
+    "O hóspede pediu mais dois dias e, na manhã seguinte, o acesso dele já venceu.",
     "O apartamento foi liberado sujo porque ninguém viu que o checkout já tinha acontecido.",
     "A comissão da plataforma come uma fatia de cada diária, e o cadastro do hóspede fica com ela.",
 ]
@@ -261,7 +265,7 @@ LEI = [
      "O STJ admite que a convenção proíba a locação por curta temporada. Só faz sentido contratar "
      "onde ela permite, ou onde a operação é hoteleira desde o projeto.", ""),
     ("O rosto do hóspede é dado sensível",
-     "A credencial facial vale apenas entre o check-in e o check-out. O texto de consentimento e a "
+     "A liberação facial vale para a estadia. O texto de consentimento e a "
      "regra de retenção da foto você valida com o jurídico do condomínio antes de operar.", ""),
     ("O acerto é evidência, não parecer",
      "O relatório mostra a conta aberta que sustenta o PIX ao proprietário. Ele não substitui a "
@@ -272,7 +276,7 @@ TILES = [
     ("Preço por tipo",      "Tarifa base, temporada, fim de semana e estadia mínima.",     "terra",    ""),
     ("Reserva no balcão",   "Orçamento congelado e unidade atribuída na confirmação.",    "terra",    ""),
     ("Site de reservas",    "Faixa de noites, ficha por tipo e pedido em três passos.",   "terra",    "piloto"),
-    ("Acesso por estadia",  "Credencial facial válida do check-in ao check-out.",         "petroleo", ""),
+    ("Acesso por estadia",  "Facial na entrada do prédio; senha da fechadura ou chave no quarto.", "petroleo", ""),
     ("Limpeza no checkout", "Tarefa, checklist com foto e vistoria à distância.",         "ambar",    ""),
     ("Quadro e mapa",       "Ocupação, estado das unidades e reservas no mesmo lugar.",   "petroleo", ""),
     ("Acerto com o dono",   "Bruto, limpeza, retenção e líquido, com PDF e chave PIX.",   "ambar",    "piloto"),
