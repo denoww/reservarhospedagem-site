@@ -51,3 +51,11 @@ Vaga nova, 4:5, Ultra. 1ª rodada (3 cand.): cenário teal sofisticado, mas o h�
 | **c1** | **7,5** | **escolhida**: parede teal com boiserie, o hóspede olha para o leitor facial (equipamento plausível, câmera visível); micro-texto ilegível sob o leitor |
 | c2 | 6,5 | retrato mais forte, mas o 'leitor' parece celular com interface alucinada; olha para a câmera, não para a porta |
 | c3 | 7 | leitor com texto no topo; perfil bom |
+
+### Foto da seção do facial — 3ª rodada (02/10/2026, pedido: 'o equipamento não parece Hikvision/Intelbras; precisa de destaque; quase 100% tela')
+
+Gastos desta rodada: ~US$ 2,3 (4 Ultra só do leitor + 4 Ultra 'dois-shots' + 4 inpaint). Aprendizados:
+- Citar a marca no prompt faz o modelo **escrever a marca** no aparelho (apareceu 'Hikvision' quase legível) — não citar.
+- No 'dois-shots' (hóspede + leitor) o modelo **ignora o leitor** e desenha só a pessoa (4 de 4).
+- Inpaint (`us.stability.stable-image-inpaint-v1:0`, precisa do perfil de inferência `us.`) redesenhou o leitor maior, mas saíram tablets genéricos/vazios e o rosto do hóspede mudou; reprovados.
+- **Escolhida: `rosto_leitor_3`** (só o equipamento, parede teal, rosto na tela, câmera no topo, módulo de leitura). Apaguei por pós-edição o micro-texto de marca falsa. Limitação: não tem o hóspede em cena e o aparelho tem o módulo inferior (não é 100% tela).
