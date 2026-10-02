@@ -191,6 +191,7 @@ section[id]{scroll-margin-top:64px}
 @media (max-width:760px){.nav-links{display:none}.brand{font-size:14px;gap:6px}.nav-in{padding:0 16px}.nav-r{gap:8px}.nav-cta{padding:6px 12px;font-size:12px}.nav-cta .mais{display:none}}
 
 .nevoa{background:var(--nevoa)}
+.nevoa+.nevoa{padding-top:calc(var(--respiro)*.45)}
 .escuro{background:var(--preto);color:var(--claro)}
 .escuro .lead,.escuro .sub{color:var(--claro-2)}
 .escuro h2,.escuro h3{color:var(--claro)}
@@ -210,6 +211,7 @@ section[id]{scroll-margin-top:64px}
 .escuro .card{background:#161519}
 .card p{color:var(--tinta-2);margin:0}
 .escuro .card p{color:var(--claro-2)}
+.card h3 .selo{display:block;width:max-content;margin:8px 0 2px}
 .selo{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;background:rgba(15,118,110,.12);color:var(--marca-esc);border-radius:980px;padding:3px 9px;margin-left:8px;vertical-align:2px}
 
 .js-rev .rev{opacity:0;transform:translateY(24px);transition:opacity .6s cubic-bezier(.45,0,.55,1),transform .6s cubic-bezier(.45,0,.55,1)}
@@ -235,13 +237,22 @@ section[id]{scroll-margin-top:64px}
 @media(max-width:860px){.rosto-grid{grid-template-columns:1fr;gap:36px}}
 @media(max-width:760px){.faixa-fotos{grid-template-columns:1fr}}
 .card-foto{display:block;max-width:none;width:calc(100% + 56px);margin:-28px -28px 20px;border-radius:28px 28px 0 0;aspect-ratio:4/3;object-fit:cover;object-position:50% 18%;height:auto}
-.hero{padding:88px 0 0}
+.hero{padding:88px 0 var(--respiro)}
 .hero .lead{margin-bottom:0}
+/* Hero centralizado: texto, demo e foto dividem o MESMO eixo (antes o texto ia à esquerda
+   e a demo/foto ao centro com larguras diferentes, deixando um vazio à direita do título). */
+.hero .wrap{text-align:center}
+.hero h1,.hero .lead{margin-left:auto;margin-right:auto}
+.hero h1{max-width:22ch}
+.hero .selo-casa{margin-bottom:22px}
+.hero .cta-linha,.hero .acoes{justify-content:center}
+.hero .demo{text-align:left}
+.hero .foto-hero figcaption{text-align:center}
 
 /* ── DEMO VIVA: a faixa de noites. HTML/CSS/JS, não vídeo ─────────────────────
    Mostra só o que o produto faz hoje: escolher noites no site, pedido de reserva,
    confirmação que libera o acesso, checkout que dispara a limpeza. */
-.demo{margin:56px auto 0;max-width:880px;background:#0b1f1d;border-radius:28px;padding:20px;color:#e6fffb}
+.demo{margin:56px auto 0;max-width:960px;background:#0b1f1d;border-radius:28px;padding:20px;color:#e6fffb}
 .demo-bar{display:flex;gap:8px;align-items:center;padding:4px 6px 16px;font-size:13px;color:#7fb8b1}
 .demo-bar i{width:10px;height:10px;border-radius:50%;background:#1f4a45;display:block}
 .demo-bar span{margin-left:8px;letter-spacing:0}
@@ -292,12 +303,13 @@ details p{margin:12px 0 0;color:var(--tinta-2)}
 footer{background:var(--nevoa);padding:40px 0;font-size:14px;color:var(--tinta-2)}
 footer a{color:var(--tinta)}
 a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-offset:3px;border-radius:4px}
-@media(max-width:760px){:root{--respiro:72px}.hero{padding-top:56px}.foto-hero{margin-left:16px;margin-right:16px}.preco-faixas{grid-template-columns:1fr;gap:8px}.pf{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-radius:16px}.pf b{font-size:24px}.pf span{margin:0;text-align:right;font-size:14px}body{padding-bottom:84px}}
+@media(max-width:760px){:root{--respiro:72px}.hero{padding-top:56px}.foto-hero{margin-left:24px;margin-right:24px}.preco-faixas{grid-template-columns:1fr;gap:8px}.pf{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-radius:16px}.pf b{font-size:24px}.pf span{margin:0;text-align:right;font-size:14px}body{padding-bottom:84px}}
 
 /* ── vendas: dores, passos, quem, prova, preço, CTA fixo ─────────────────────── */
 .selo-casa{display:inline-block;font-size:13px;font-weight:600;color:var(--marca-esc);background:rgba(15,118,110,.1);border-radius:980px;padding:5px 12px;margin:0 0 14px}
 .dores{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:40px}
 .dor{background:var(--branco);border-radius:24px;padding:24px 26px}
+@media(min-width:900px){.dores{grid-template-columns:repeat(6,1fr)}.dor{grid-column:span 2}.dor:nth-child(n+4){grid-column:span 3}}
 .dor h3{font-size:19px;line-height:1.3;margin:0 0 10px}
 .dor p{margin:0;color:var(--marca-esc);font-size:16px;line-height:1.45;padding-left:14px;border-left:2px solid var(--marca)}
 .passos4{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin-top:40px;counter-reset:p}
@@ -309,7 +321,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
 .escuro .cta-linha small{color:var(--claro-2)}
 .quem3{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:40px}
 .quem3 .card svg{width:44px;height:44px;stroke:var(--marca);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px}
-.requisito{margin-top:28px;background:var(--branco);border-radius:20px;padding:20px 24px;max-width:70ch;font-size:16px;color:var(--tinta);border-left:4px solid var(--marca)}
+.requisito{margin-top:28px;background:var(--branco);border-radius:20px;padding:20px 24px;max-width:70ch;font-size:16px;color:var(--tinta);border-left:4px solid var(--marca);border-radius:0 20px 20px 0}
 .nevoa .requisito{background:var(--branco)}
 .prova3{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:40px}
 .preco-faixas{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:40px}
@@ -585,7 +597,7 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
   // ── Demo viva ──
   var demo=document.getElementById('demo'),dias=document.getElementById('dias'),sub=document.getElementById('calSub');
   var passos=[].slice.call(demo.querySelectorAll('.passo'));
-  var N=14,OCUP=[2,3,10],ENTRA=5,SAI=8; // noites 5,6,7 (checkout dia 8)
+  var N=21,OCUP=[2,3,10,16],ENTRA=5,SAI=8; // noites 5,6,7 (checkout dia 8)
   var NOMES=['S','T','Q','Q','S','S','D'];
   NOMES.forEach(function(n){var b=document.createElement('b');b.textContent=n;dias.appendChild(b)});
   var cel=[];
