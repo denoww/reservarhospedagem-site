@@ -141,7 +141,7 @@ img{display:block;max-width:100%}
 .nav-r a{color:var(--tinta);opacity:.85}
 .nav-r a:hover{opacity:1;color:var(--terra)}
 .nav-cta{background:var(--terra);color:#fff!important;padding:6px 14px;border-radius:980px;font-weight:500}
-@media(max-width:760px){.nav-links{display:none}}
+@media(max-width:760px){.nav-links{display:none}.nav{padding:0 16px}.nav .brand{font-size:14px;gap:6px;white-space:nowrap}.nav .brand .tld{display:none}.nav-r{gap:8px}.nav-cta{white-space:nowrap;padding:6px 12px;font-size:12px}.nav-cta .mais{display:none}}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--terra);color:#fff;
   padding:12px 22px;border-radius:980px;font-weight:400;font-size:17px;letter-spacing:-.022em;
@@ -321,9 +321,9 @@ def build():
   <a class="brand" href="/"><img src="/assets/brand-mark.png" width="24" height="24" alt="">
     <span>reservarhospedagem<span class="tld">.app</span></span></a>
   <span class="nav-r"><span class="nav-links">
-    <a href="#preco-tarifa">Preço</a><a href="#reserva">Reserva</a>
+    <a href="#valor">Quanto custa</a><a href="#reserva">Reserva</a>
     <a href="#acerto">Acerto</a><a href="#limites">O que não faz</a></span>
-  <a class="nav-cta" href="{WA}">Falar no WhatsApp</a></span>
+  <a class="nav-cta" href="{WA}">Falar<span class="mais"> no</span> WhatsApp</a></span>
 </nav>'''
 
     dias = [("seg", "12"), ("ter", "13"), ("qua", "14"), ("qui", "15"), ("sex", "16"), ("sáb", "17"), ("dom", "18")]
@@ -345,7 +345,7 @@ def build():
 
     credo = f'<section class="credo rev"><h2>{C.CREDO}</h2></section>'
 
-    cap_preco = chapter("preco-tarifa", "O preço", "Cada noite com a tarifa certa.",
+    cap_preco = chapter("preco-tarifa", "A tarifa", "Cada noite com a tarifa certa.",
         "Você vende por tipo de acomodação. A tarifa vigente de maior prioridade vence em cada noite, "
         "e o total chega decomposto — diárias, adicionais e limpeza —, nunca só um número.",
         cards(C.PRECO_CARDS, "terra"))
@@ -383,14 +383,16 @@ def build():
     cap_quem = chapter("quem", "Para quem é", "Se você opera hospedagem, serve.",
         "Condomínio, flat, pousada pequena e clube com chalés. O alvo é quem já tem a unidade e a "
         "portaria — e quer o canal direto e o acerto no mesmo sistema.",
-        f'<div class="naos rev" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">{setores}</div>',
-        '<div class="cap-head rev" style="margin-top:64px"><h2 style="font-size:30px">'
-        'O que dói hoje.</h2></div>',
+        f'<div class="naos rev" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">{setores}</div>')
+
+    cap_dor = chapter("dor", "O que dói hoje", "Se isso é a sua semana, é com você que a gente fala.",
+        "Situações do dia a dia de quem hospeda, e o que o sistema faz com cada uma.",
         lista(C.DORES))
 
     naos = "".join(f'<div class="nao"><h4>{t}</h4><p>{d}</p></div>' for t, d in C.PRECO_NOTA)
-    cap_valor = chapter("valor", "Quanto custa", "A proposta sai do tamanho da operação.",
-        "Ainda não há tabela pública. Dizer isso agora é melhor do que inventar um número.",
+    cap_valor = chapter("valor", "Quanto custa", "Você paga por unidade ativa. As duas primeiras são grátis.",
+        "Cobrança por unidade ativa, por mês, com preço que cai nas faixas maiores. Sem taxa de "
+        "implantação e sem fidelidade.",
         f'<div class="naos rev">{naos}</div>')
 
     cap_limites = chapter("limites", "Honestidade", "O que o reservarhospedagem não faz.",
@@ -427,8 +429,8 @@ def build():
     Baixar o livreto (PDF)</a></div>
 </section>'''
 
-    body = "\n".join([nav, hero, credo, cap_preco, cap_reserva, cap_site, cap_estadia, cap_limpeza,
-                      cap_acerto, cap_quadro, cap_quem, cap_valor, cap_limites, cap_lei,
+    body = "\n".join([nav, hero, credo, cap_dor, cap_valor, cap_preco, cap_reserva, cap_site, cap_estadia, cap_limpeza,
+                      cap_acerto, cap_quadro, cap_quem, cap_limites, cap_lei,
                       lineup, cta, dl])
 
     hoje = datetime.date.today().strftime("%d/%m/%Y")

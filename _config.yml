@@ -9,6 +9,7 @@ url: "https://www.reservarhospedagem.app"
 exclude:
   - CLAUDE.md
   - README.md
+  - PENDENCIAS.md
   - tools
   - fotos
   # gerador do livreto: a SAÍDA (livreto/index.html, livreto.pdf) é publicada; a fonte, não

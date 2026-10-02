@@ -17,8 +17,9 @@ Fonte da verdade do que pode ser dito, nesta ordem:
   • Pagamento online / checkout automático no site (Onda 4).
   • Avaliações, tarifa de recorrente, vitrine reunindo vários condomínios (5 e 6).
   • "Porta = verdade" (4.5): o checkout que dispara a limpeza NÃO é lido da porta.
-  • Concorrente pelo nome, preço (ainda não há tabela), "ninguém tem", prova social
+  • Concorrente pelo nome, "ninguém tem", prova social
     inventada ("X condomínios"), número não verificado.
+  • Preço: só a tabela aprovada pelo Rodrigo em 02/10/2026 (ver PRECO_NOTA). Nada além dela.
 """
 from pathlib import Path
 
@@ -209,12 +210,19 @@ DORES = [
 ]
 
 PRECO_NOTA = [
-    ("Ainda sem tabela pública",
-     "O módulo de hospedagem é um add-on e ainda não tem preço de tabela. A proposta sai do "
-     "tamanho da operação: quantas unidades e quantos tipos de acomodação."),
-    ("Sem taxa por reserva",
-     "O objetivo do produto é tirar a comissão do caminho. Não há percentual sobre cada diária "
-     "vendida no seu canal direto."),
+    ("As 2 primeiras unidades são grátis",
+     "A cobrança é por unidade ativa, por mês. Quem opera pouco começa sem pagar nada."),
+    ("Preço por faixa de unidades",
+     "R$&nbsp;4,90 por unidade da 3ª à 10ª, R$&nbsp;2,90 da 11ª à 30ª e R$&nbsp;1,90 da 31ª em diante. "
+     "Quanto mais unidades, menos cada uma custa."),
+    ("Sem implantação, sem fidelidade, sem comissão",
+     "Não há taxa de implantação, nem contrato de fidelidade, nem percentual sobre as reservas do "
+     "seu site. O objetivo do produto é tirar a comissão do caminho."),
+    ("O que é unidade ativa",
+     "A unidade ligada a um tipo de acomodação publicado no site e à venda em pelo menos um dia do "
+     "mês. Apartamento cadastrado que não está à venda não paga."),
+    ("Exemplos de mensalidade",
+     "6 unidades ativas: R$&nbsp;19,60 por mês. 10 unidades: R$&nbsp;39,20. 30 unidades: R$&nbsp;97,20."),
     ("Piloto de verdade",
      "Há um condomínio operando temporada sobre o módulo. Conte o seu caso e a gente mostra o "
      "que já roda, sem prometer o que ainda não existe."),

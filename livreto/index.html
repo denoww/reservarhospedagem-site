@@ -70,7 +70,7 @@ img{display:block;max-width:100%}
 .nav-r a{color:var(--tinta);opacity:.85}
 .nav-r a:hover{opacity:1;color:var(--terra)}
 .nav-cta{background:var(--terra);color:#fff!important;padding:6px 14px;border-radius:980px;font-weight:500}
-@media(max-width:760px){.nav-links{display:none}}
+@media(max-width:760px){.nav-links{display:none}.nav{padding:0 16px}.nav .brand{font-size:14px;gap:6px;white-space:nowrap}.nav .brand .tld{display:none}.nav-r{gap:8px}.nav-cta{white-space:nowrap;padding:6px 12px;font-size:12px}.nav-cta .mais{display:none}}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--terra);color:#fff;
   padding:12px 22px;border-radius:980px;font-weight:400;font-size:17px;letter-spacing:-.022em;
@@ -233,9 +233,9 @@ img{display:block;max-width:100%}
   <a class="brand" href="/"><img src="/assets/brand-mark.png" width="24" height="24" alt="">
     <span>reservarhospedagem<span class="tld">.app</span></span></a>
   <span class="nav-r"><span class="nav-links">
-    <a href="#preco-tarifa">Preço</a><a href="#reserva">Reserva</a>
+    <a href="#valor">Quanto custa</a><a href="#reserva">Reserva</a>
     <a href="#acerto">Acerto</a><a href="#limites">O que não faz</a></span>
-  <a class="nav-cta" href="https://wa.me/5562985673142?text=Ol%C3%A1%21%20Vi%20o%20livreto%20do%20reservarhospedagem%20e%20quero%20conhecer.">Falar no WhatsApp</a></span>
+  <a class="nav-cta" href="https://wa.me/5562985673142?text=Ol%C3%A1%21%20Vi%20o%20livreto%20do%20reservarhospedagem%20e%20quero%20conhecer.">Falar<span class="mais"> no</span> WhatsApp</a></span>
 </nav>
 <header class="hero">
   <span class="eyebrow">Livreto</span>
@@ -251,9 +251,23 @@ img{display:block;max-width:100%}
   </div>
 </header>
 <section class="credo rev"><h2>A comissão da plataforma e o cadastro do hóspede deixam de ser o seu preço de entrada. O que você vende, a quem e por quanto fica <span class="g">no seu sistema</span>, e o hóspede chega por um site que é seu.</h2></section>
-<section class="cap " id="preco-tarifa" aria-label="O preço">
+<section class="cap " id="dor" aria-label="O que dói hoje">
   <div class="cap-in">
-    <div class="cap-head rev"><span class="eyebrow">O preço</span><h2>Cada noite com a tarifa certa.</h2>
+    <div class="cap-head rev"><span class="eyebrow">O que dói hoje</span><h2>Se isso é a sua semana, é com você que a gente fala.</h2>
+      <p class="lead">Situações do dia a dia de quem hospeda, e o que o sistema faz com cada uma.</p></div>
+    <ul class="check rev"><li><span class="ck"></span>A reserva chega pelo WhatsApp, a data é fechada na planilha e alguém esquece de atualizar a outra aba.</li><li><span class="ck"></span>O proprietário pergunta quanto ficou no mês e a resposta depende de somar três planilhas.</li><li><span class="ck"></span>O hóspede chega às 22h e não tem quem entregue a chave.</li><li><span class="ck"></span>O hóspede pediu mais dois dias e, na manhã seguinte, a credencial recusa.</li><li><span class="ck"></span>O apartamento foi liberado sujo porque ninguém viu que o checkout já tinha acontecido.</li><li><span class="ck"></span>A comissão da plataforma come uma fatia de cada diária, e o cadastro do hóspede fica com ela.</li></ul>
+  </div>
+</section>
+<section class="cap nevoa" id="valor" aria-label="Quanto custa">
+  <div class="cap-in">
+    <div class="cap-head rev"><span class="eyebrow">Quanto custa</span><h2>Você paga por unidade ativa. As duas primeiras são grátis.</h2>
+      <p class="lead">Cobrança por unidade ativa, por mês, com preço que cai nas faixas maiores. Sem taxa de implantação e sem fidelidade.</p></div>
+    <div class="naos rev"><div class="nao"><h4>As 2 primeiras unidades são grátis</h4><p>A cobrança é por unidade ativa, por mês. Quem opera pouco começa sem pagar nada.</p></div><div class="nao"><h4>Preço por faixa de unidades</h4><p>R$&nbsp;4,90 por unidade da 3ª à 10ª, R$&nbsp;2,90 da 11ª à 30ª e R$&nbsp;1,90 da 31ª em diante. Quanto mais unidades, menos cada uma custa.</p></div><div class="nao"><h4>Sem implantação, sem fidelidade, sem comissão</h4><p>Não há taxa de implantação, nem contrato de fidelidade, nem percentual sobre as reservas do seu site. O objetivo do produto é tirar a comissão do caminho.</p></div><div class="nao"><h4>O que é unidade ativa</h4><p>A unidade ligada a um tipo de acomodação publicado no site e à venda em pelo menos um dia do mês. Apartamento cadastrado que não está à venda não paga.</p></div><div class="nao"><h4>Exemplos de mensalidade</h4><p>6 unidades ativas: R$&nbsp;19,60 por mês. 10 unidades: R$&nbsp;39,20. 30 unidades: R$&nbsp;97,20.</p></div><div class="nao"><h4>Piloto de verdade</h4><p>Há um condomínio operando temporada sobre o módulo. Conte o seu caso e a gente mostra o que já roda, sem prometer o que ainda não existe.</p></div></div>
+  </div>
+</section>
+<section class="cap " id="preco-tarifa" aria-label="A tarifa">
+  <div class="cap-in">
+    <div class="cap-head rev"><span class="eyebrow">A tarifa</span><h2>Cada noite com a tarifa certa.</h2>
       <p class="lead">Você vende por tipo de acomodação. A tarifa vigente de maior prioridade vence em cada noite, e o total chega decomposto — diárias, adicionais e limpeza —, nunca só um número.</p></div>
     <div class="fgrid c-terra rev"><article class="fc"><span class="fc-mk"></span><h3>Preço por tipo de acomodação</h3><p>Você vende o tipo — estúdio, dois quartos, chalé —, e a unidade é atribuída depois. Tipo com uma única unidade funciona do mesmo jeito.</p></article><article class="fc"><span class="fc-mk"></span><h3>Tarifa base, temporada e fim de semana</h3><p>A tarifa de maior prioridade vigente em cada noite vence. A alta temporada cobre o Carnaval sem apagar a tarifa padrão.</p></article><article class="fc"><span class="fc-mk"></span><h3>Estadia mínima e hóspede adicional</h3><p>A regra de estadia mínima e o valor por hóspede além da capacidade entram no cálculo, noite por noite.</p></article><article class="fc"><span class="fc-mk"></span><h3>Taxa de limpeza por estadia</h3><p>Uma por estadia, não por noite. Aparece decomposta no orçamento, em vez de embutida na diária.</p></article><article class="fc"><span class="fc-mk"></span><h3>O total vem decomposto</h3><p>Quem confere vê diárias, adicionais e limpeza separados — nunca só um número que ninguém consegue explicar depois.</p></article><article class="fc"><span class="fc-mk"></span><h3>Bloqueio por período</h3><p>Manutenção ou uso do proprietário tiram a unidade, ou o tipo inteiro, de venda por um período — e a disponibilidade já os considera.</p></article></div>
   </div>
@@ -304,24 +318,17 @@ img{display:block;max-width:100%}
   <div class="cap-in">
     <div class="cap-head rev"><span class="eyebrow">Para quem é</span><h2>Se você opera hospedagem, serve.</h2>
       <p class="lead">Condomínio, flat, pousada pequena e clube com chalés. O alvo é quem já tem a unidade e a portaria — e quer o canal direto e o acerto no mesmo sistema.</p></div>
-    <div class="naos rev" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))"><div class="nao rev"><h4>Condomínio com temporada</h4><p>Apartamentos alugados por temporada, onde o condomínio já controla a portaria e quer controlar também a reserva e o acerto.</p></div><div class="nao rev"><h4>Flat e condo-hotel</h4><p>Proprietário investidor, operador no meio e a pergunta de sempre: quanto entrou, quanto fica, quanto vai pra quem.</p></div><div class="nao rev"><h4>Pousada pequena</h4><p>Poucos quartos, planilha e WhatsApp, e a hora em que a planilha para de dar conta.</p></div><div class="nao rev"><h4>Clube com chalés</h4><p>Chalé, unidade de lazer ou multipropriedade que precisa de preço, reserva e acesso na mesma mão.</p></div></div><div class="cap-head rev" style="margin-top:64px"><h2 style="font-size:30px">O que dói hoje.</h2></div><ul class="check rev"><li><span class="ck"></span>A reserva chega pelo WhatsApp, a data é fechada na planilha e alguém esquece de atualizar a outra aba.</li><li><span class="ck"></span>O proprietário pergunta quanto ficou no mês e a resposta depende de somar três planilhas.</li><li><span class="ck"></span>O hóspede chega às 22h e não tem quem entregue a chave.</li><li><span class="ck"></span>O hóspede pediu mais dois dias e, na manhã seguinte, a credencial recusa.</li><li><span class="ck"></span>O apartamento foi liberado sujo porque ninguém viu que o checkout já tinha acontecido.</li><li><span class="ck"></span>A comissão da plataforma come uma fatia de cada diária, e o cadastro do hóspede fica com ela.</li></ul>
+    <div class="naos rev" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))"><div class="nao rev"><h4>Condomínio com temporada</h4><p>Apartamentos alugados por temporada, onde o condomínio já controla a portaria e quer controlar também a reserva e o acerto.</p></div><div class="nao rev"><h4>Flat e condo-hotel</h4><p>Proprietário investidor, operador no meio e a pergunta de sempre: quanto entrou, quanto fica, quanto vai pra quem.</p></div><div class="nao rev"><h4>Pousada pequena</h4><p>Poucos quartos, planilha e WhatsApp, e a hora em que a planilha para de dar conta.</p></div><div class="nao rev"><h4>Clube com chalés</h4><p>Chalé, unidade de lazer ou multipropriedade que precisa de preço, reserva e acesso na mesma mão.</p></div></div>
   </div>
 </section>
-<section class="cap " id="valor" aria-label="Quanto custa">
-  <div class="cap-in">
-    <div class="cap-head rev"><span class="eyebrow">Quanto custa</span><h2>A proposta sai do tamanho da operação.</h2>
-      <p class="lead">Ainda não há tabela pública. Dizer isso agora é melhor do que inventar um número.</p></div>
-    <div class="naos rev"><div class="nao"><h4>Ainda sem tabela pública</h4><p>O módulo de hospedagem é um add-on e ainda não tem preço de tabela. A proposta sai do tamanho da operação: quantas unidades e quantos tipos de acomodação.</p></div><div class="nao"><h4>Sem taxa por reserva</h4><p>O objetivo do produto é tirar a comissão do caminho. Não há percentual sobre cada diária vendida no seu canal direto.</p></div><div class="nao"><h4>Piloto de verdade</h4><p>Há um condomínio operando temporada sobre o módulo. Conte o seu caso e a gente mostra o que já roda, sem prometer o que ainda não existe.</p></div></div>
-  </div>
-</section>
-<section class="cap nevoa" id="limites" aria-label="Honestidade">
+<section class="cap " id="limites" aria-label="Honestidade">
   <div class="cap-in">
     <div class="cap-head rev"><span class="eyebrow">Honestidade</span><h2>O que o reservarhospedagem não faz.</h2>
       <p class="lead">Um livreto que só lista virtude não ajuda ninguém a decidir. Isto aqui é o que ele <b>não</b> resolve — para você não descobrir depois de assinar.</p></div>
     <div class="fgrid c-ambar rev"><article class="fc"><span class="fc-mk"></span><h3>Não há sincronização com Airbnb e Booking</h3><p>Se você vende por uma plataforma, ela continua separada do seu calendário. Não existe sincronização automática de datas: você bloqueia na mão a unidade que foi vendida lá fora. Quem opera nas duas pontas precisa conviver com esse risco de reserva duplicada.</p></article><article class="fc"><span class="fc-mk"></span><h3>Não distribui preço para outros canais</h3><p>O sistema não é um gestor de canais. Ele não publica tarifa nem disponibilidade em outras plataformas — o seu preço vive no seu site.</p></article><article class="fc"><span class="fc-mk"></span><h3>Não existe pagamento online no site</h3><p>O hóspede envia o pedido, a recepção confirma e a cobrança segue o fluxo que o condomínio já tem. Não há checkout com PIX ou cartão fechando a reserva sozinho.</p></article><article class="fc"><span class="fc-mk"></span><h3>A reserva do site é uma pré-reserva</h3><p>Ela só vira reserva quando alguém confirma. É de propósito: a unidade pode ter sido fechada no balcão entre o hóspede ver a página e enviar o pedido.</p></article><article class="fc"><span class="fc-mk"></span><h3>O checkout não é lido pela porta</h3><p>A tarefa de limpeza nasce da reserva e do horário de saída registrado no sistema. A leitura do acesso real do hóspede na saída ainda não dispara a limpeza.</p></article><article class="fc"><span class="fc-mk"></span><h3>Não paga o proprietário por você</h3><p>O acerto é um relatório com a chave PIX. Quem transfere é o condomínio, e o tratamento contábil e tributário do repasse é conversa com o seu contador.</p></article><article class="fc"><span class="fc-mk"></span><h3>Não existe vitrine com vários condomínios</h3><p>O site é o do seu condomínio. Não há busca reunindo várias propriedades, nem avaliações de hóspedes, nem cupom de retorno.</p></article><article class="fc"><span class="fc-mk"></span><h3>Não decide se a convenção permite temporada</h3><p>Há condomínios cuja convenção proíbe locação por temporada, e isso é jurídico, não de software. O sistema serve a quem opera — e não deve ser contratado por quem não pode.</p></article></div>
   </div>
 </section>
-<section class="cap " id="lei" aria-label="Antes de operar">
+<section class="cap nevoa" id="lei" aria-label="Antes de operar">
   <div class="cap-in">
     <div class="cap-head rev"><span class="eyebrow">Antes de operar</span><h2>Três coisas que não são de software.</h2>
       <p class="lead">O sistema entrega a operação. Convenção, dado sensível e tributação do repasse têm dono fora dele.</p></div>
@@ -346,7 +353,7 @@ img{display:block;max-width:100%}
   <div class="btns"><a class="btn" href="/livreto.pdf" download="livreto-reservarhospedagem.pdf">
     Baixar o livreto (PDF)</a></div>
 </section>
-<footer class="foot"><div class="foot-in"><span>reservarhospedagem · parte da família Seu Condomínio · <a href="https://www.reservarhospedagem.app/privacidade">Privacidade</a></span><span>Livreto v02/10/2026 · 6f86b24</span></div></footer>
+<footer class="foot"><div class="foot-in"><span>reservarhospedagem · parte da família Seu Condomínio · <a href="https://www.reservarhospedagem.app/privacidade">Privacidade</a></span><span>Livreto v02/10/2026 · 2e2a110</span></div></footer>
 <script>
 (function(){
   if(matchMedia("(prefers-reduced-motion: reduce)").matches){
