@@ -29,6 +29,43 @@
 <meta name="twitter:description" content="Sistema para condomínios com temporada, flats e pousadas, do Seu Condomínio: site de reservas próprio, entrada do prédio com reconhecimento facial, limpeza avisada na saída do hóspede e acerto com o proprietário. As 2 primeiras unidades são grátis." />
 <meta name="twitter:image" content="https://www.reservarhospedagem.app/assets/og.jpg" />
 
+<!-- ═══ MEDIÇÃO — GA4 (propriedade "reservarhospedagem.app") ══════════════════
+     Existe por um motivo só: o lead deste site é um CLIQUE PARA FORA (wa.me), e sem isso não dá pra saber
+     se a home, o livreto e o blog trazem cliente. Mesmo ID do blog (blog.reservarhospedagem.app).
+
+     ⚠️ NENHUM SINAL DE ANÚNCIO: `ad_storage`/`ad_user_data`/`ad_personalization` nascem `denied` e
+     `allow_google_signals:false` — este site não faz remarketing nem cruza o visitante com o Google Ads.
+     `analytics_storage` fica `granted`: medir audiência em 1ª parte está descrito em /privacidade e tem
+     opt-out real. O listener é DELEGADO no document: pega todos os CTAs `wa.me`, atuais e futuros. ═════ -->
+<script>
+  // Opt-out de verdade: o botão em /privacidade grava esta chave. Precisa vir ANTES do gtag.js.
+  try { if (localStorage.getItem('sem-analytics') === '1') window['ga-disable-G-QBEFHNJP91'] = true; } catch (e) {}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QBEFHNJP91"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+    analytics_storage: 'granted'
+  });
+  gtag('js', new Date());
+  gtag('config', 'G-QBEFHNJP91', {
+    allow_google_signals: false,
+    allow_ad_personalization_signals: false
+  });
+  document.addEventListener('click', function (e) {
+    var alvo = e.target;
+    if (!alvo || !alvo.closest) return;
+    var a = alvo.closest('a[href*="wa.me"]');
+    if (!a) return;
+    gtag('event', 'contato_whatsapp', {
+      pagina: location.pathname,
+      cta: a.className || 'sem-classe'
+    });
+  });
+</script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

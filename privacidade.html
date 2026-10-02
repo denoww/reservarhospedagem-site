@@ -45,7 +45,33 @@
   .data{font-size:15px;color:var(--tinta-2);margin-bottom:40px}
   footer{border-top:1px solid var(--linha);margin-top:64px;padding:32px 0 56px;font-size:14px;color:var(--tinta-2)}
   footer a{color:var(--tinta)}
+  .btn-optout{font:inherit;font-size:15px;font-weight:600;color:var(--branco);background:var(--terra-esc);
+    border:0;border-radius:980px;padding:10px 20px;cursor:pointer}
+  .btn-optout:hover{background:var(--terra)}
+  .btn-optout[disabled]{background:var(--tinta-2);cursor:default}
+  .card{background:var(--nevoa);border-radius:18px;padding:18px 22px;margin:8px 0 18px}
+  .mono{font-family:ui-monospace,monospace}
 </style>
+<!-- Medição — mesma tag da home. Aqui ela também precisa existir para o botão de opt-out
+     (seção "Visitantes deste site") poder desligá-la nesta mesma página. -->
+<script>
+  try { if (localStorage.getItem('sem-analytics') === '1') window['ga-disable-G-QBEFHNJP91'] = true; } catch (e) {}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QBEFHNJP91"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted'});
+  gtag('js', new Date());
+  gtag('config', 'G-QBEFHNJP91', {allow_google_signals: false, allow_ad_personalization_signals: false});
+  document.addEventListener('click', function (e) {
+    var alvo = e.target;
+    if (!alvo || !alvo.closest) return;
+    var a = alvo.closest('a[href*="wa.me"]');
+    if (!a) return;
+    gtag('event', 'contato_whatsapp', { pagina: location.pathname, cta: a.className || 'sem-classe' });
+  });
+</script>
 </head>
 <body>
 
@@ -100,11 +126,22 @@
   <h2>Visitantes deste site</h2>
   <p>Esta seção é sobre <strong>quem apenas navega em reservarhospedagem.app</strong>.</p>
   <ul>
-    <li><strong>Não há analytics, cookie de rastreamento nem pixel de anúncio.</strong></li>
-    <li><strong>Não há fonte, script ou imagem de terceiro.</strong> Todo o conteúdo é servido do próprio domínio.</li>
+    <li><strong>Medimos audiência</strong> com o Google Analytics: páginas visitadas, de onde você veio (busca, anúncio, link), tipo de aparelho e cidade aproximada. Também registramos quando alguém clica em um botão de WhatsApp, para saber quais páginas geram contato.</li>
+    <li><strong>Não fazemos publicidade com isso.</strong> Os sinais de anúncio do Google chegam desligados neste site: não construímos público de remarketing, não personalizamos anúncio e não cruzamos sua navegação com sua conta Google.</li>
+    <li><strong>Não pedimos, nem guardamos, nada que identifique você</strong> nesta navegação. Nome, e-mail e telefone só existem se você escolher nos escrever no WhatsApp.</li>
+    <li><strong>Base legal:</strong> legítimo interesse em entender como as pessoas encontram e usam o site, com a transparência desta seção e o desligamento abaixo.</li>
+    <li><strong>Fonte e imagens são do próprio domínio.</strong> O único script de terceiro é o do Google Analytics, descrito acima.</li>
     <li><strong>Hospedagem</strong> — as páginas são servidas pelo GitHub Pages, que, como qualquer servidor web, processa o endereço IP da requisição para entregar o conteúdo.</li>
     <li><strong>Clicar no botão de WhatsApp</strong> abre uma conversa com a gente. O que você escrever fica registrado no nosso atendimento, inclusive a mensagem pré-preenchida, que diz de qual página você veio.</li>
   </ul>
+
+  <div class="card">
+    <p style="margin-top:0"><strong>Não quer ser medido?</strong> O botão abaixo desliga a medição neste navegador, agora, e continua valendo nas próximas visitas.</p>
+    <p style="margin-bottom:0">
+      <button type="button" id="btOptOut" class="btn-optout">Desligar a medição neste navegador</button>
+      <span id="optOutStatus" class="mono" style="margin-left:10px"></span>
+    </p>
+  </div>
 
   <h2 id="contato">Contato</h2>
   <p>Dúvidas sobre esta política: <a href="https://wa.me/5562985673142?text=Ol%C3%A1%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20privacidade%20no%20reservarhospedagem.">fale com a gente no WhatsApp</a>. Se você é hóspede de um contratante que usa o sistema, o pedido também pode ser feito diretamente a ele.</p>
@@ -119,5 +156,27 @@
   </div>
 </footer>
 
+<script>
+(function () {
+  var bt = document.getElementById('btOptOut');
+  var status = document.getElementById('optOutStatus');
+  if (!bt) return;
+  function desligado() {
+    try { return localStorage.getItem('sem-analytics') === '1'; } catch (e) { return false; }
+  }
+  function pinta() {
+    if (!desligado()) return;
+    bt.disabled = true;
+    bt.textContent = 'Medição desligada neste navegador';
+    status.textContent = '✓';
+  }
+  bt.addEventListener('click', function () {
+    try { localStorage.setItem('sem-analytics', '1'); } catch (e) {}
+    window['ga-disable-G-QBEFHNJP91'] = true;
+    pinta();
+  });
+  pinta();
+})();
+</script>
 </body>
 </html>

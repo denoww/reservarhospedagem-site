@@ -70,3 +70,8 @@ sistema realmente envia, em que momento).
   O site diz "sob demanda, combinado na implantação; ainda não é um recurso pronto". Quando existir, trocar o texto.
 - **Equipamento facial:** modelos **entre R$ 2 mil e R$ 3 mil** (valor do aparelho). **Instalação e mensalidade da portaria seguem sem definição**
   — o site diz que entram na proposta pelo WhatsApp.
+
+## Medição (02/10/2026)
+- GA4 criado: propriedade **reservarhospedagem.app** (conta Seu Condomínio), fluxo web `www.reservarhospedagem.app`, **ID G-QBEFHNJP91**
+  (mesmo ID no blog). Consentimento `analytics_storage` + opt-out em /privacidade, evento `contato_whatsapp`. Os dados levam até 48 h para aparecer.
+- A página /privacidade deixou de dizer "não há analytics" e passou a descrever a medição e o opt-out.
