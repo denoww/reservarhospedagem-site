@@ -171,6 +171,15 @@ section[id]{scroll-margin-top:64px}
 .rev.on{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}}
 
+.foto{display:block;width:100%;height:auto;border-radius:28px;background:var(--nevoa)}
+.foto-hero{margin:56px auto 0;max-width:960px}
+.foto-hero .foto{aspect-ratio:16/9;object-fit:cover}
+.faixa-fotos{display:grid;gap:20px;grid-template-columns:1fr 1fr;margin-top:56px}
+.faixa-fotos figure{margin:0}
+.faixa-fotos .foto{aspect-ratio:3/2;object-fit:cover}
+.faixa-fotos figcaption,.foto-hero figcaption{font-size:14px;color:var(--tinta-2);margin-top:10px}
+@media(max-width:760px){.faixa-fotos{grid-template-columns:1fr}}
+.card-foto{display:block;max-width:none;width:calc(100% + 56px);margin:-28px -28px 20px;border-radius:28px 28px 0 0;aspect-ratio:4/3;object-fit:cover;object-position:50% 18%;height:auto}
 .hero{padding:88px 0 0}
 .hero .lead{margin-bottom:0}
 
@@ -262,6 +271,10 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
       <a class="btn btn-ghost" href="#como">Como funciona</a>
     </div>
 
+    <figure class="foto-hero rev">
+      <img class="foto" src="/assets/hero-1344.jpg" srcset="/assets/hero-800.jpg 800w, /assets/hero-1344.jpg 1344w" sizes="(max-width:1000px) 100vw, 960px" width="1344" height="768" alt="Anfitriã de casaco cinza estende uma chave dourada para a câmera, com fundo azul-petróleo" fetchpriority="high" decoding="async" />
+    </figure>
+
     <figure class="demo rev" id="demo" aria-label="Demonstração animada do fluxo de uma reserva">
       <div class="demo-bar" aria-hidden="true"><i></i><i></i><i></i><span>seu-condominio.com.br/hospedagem</span></div>
       <div class="demo-corpo">
@@ -295,6 +308,16 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
       <div class="card rev"><h3>Quadro e calendário<span class="selo">tape-chart</span></h3><p>Quem está onde, quem chega, quem sai e o que está sujo ou pronto. Bloqueios de manutenção ou uso do proprietário entram como período.</p></div>
       <div class="card rev"><h3>Acerto com o proprietário</h3><p>Relatório por proprietário e período: receita, taxa de limpeza, retenção do condomínio e o líquido a repassar, em PDF. Você paga o PIX com a conta na mão.</p></div>
     </div>
+    <div class="faixa-fotos">
+      <figure class="rev">
+        <img class="foto" src="/assets/rosto-800.jpg" srcset="/assets/rosto-800.jpg 800w, /assets/rosto-1344.jpg 1344w" sizes="(max-width:760px) 100vw, 50vw" width="1344" height="768" alt="Hóspede com mala sorri para o leitor facial discreto na porta do apartamento" loading="lazy" decoding="async" />
+        <figcaption>Reserva confirmada, credencial liberada: o hóspede chega e entra com o rosto.</figcaption>
+      </figure>
+      <figure class="rev">
+        <img class="foto" src="/assets/limpeza-720.jpg" srcset="/assets/limpeza-720.jpg 720w, /assets/limpeza-1200.jpg 1200w" sizes="(max-width:760px) 100vw, 50vw" width="1200" height="821" alt="Camareira dobra toalhas brancas sobre a cama de um quarto claro" loading="lazy" decoding="async" />
+        <figcaption>No checkout, a tarefa de limpeza nasce sozinha para a camareira.</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -303,9 +326,9 @@ a:focus-visible,summary:focus-visible{outline:3px solid var(--marca);outline-off
     <p class="olho rev">Para quem é</p>
     <h2 class="rev">Quem hospeda e já responde pela porta.</h2>
     <div class="grade">
-      <div class="card rev"><h3>Condomínio que opera temporada</h3><p>Prédio com unidades de Airbnb, em que a administração cuida da entrada, da limpeza e do repasse aos proprietários. É o nosso ponto de partida.</p></div>
-      <div class="card rev"><h3>Hotel e pousada pequena</h3><p>Poucos quartos, equipe enxuta e vontade de vender direto. Acomodações, tarifas, reservas e quadro de hospedagem no mesmo lugar.</p></div>
-      <div class="card rev"><h3>Flat, condo-hotel e chalés</h3><p>Operação em que o gestor aluga por conta de vários donos e precisa provar quanto cada um recebeu.</p></div>
+      <div class="card rev"><img class="card-foto" src="/assets/condominio-400.jpg" srcset="/assets/condominio-400.jpg 400w, /assets/condominio-600.jpg 600w" sizes="(max-width:760px) 100vw, 360px" width="600" height="877" alt="Administrador de condomínio de casaco azul-marinho, de braços cruzados, diante de fundo azul-petróleo" loading="lazy" decoding="async" /><h3>Condomínio que opera temporada</h3><p>Prédio com unidades de Airbnb, em que a administração cuida da entrada, da limpeza e do repasse aos proprietários. É o nosso ponto de partida.</p></div>
+      <div class="card rev"><img class="card-foto" src="/assets/pousada-400.jpg" srcset="/assets/pousada-400.jpg 400w, /assets/pousada-600.jpg 600w" sizes="(max-width:760px) 100vw, 360px" width="600" height="877" alt="Dona de pousada de cardigã creme segura uma xícara de café e sorri" loading="lazy" decoding="async" /><h3>Hotel e pousada pequena</h3><p>Poucos quartos, equipe enxuta e vontade de vender direto. Acomodações, tarifas, reservas e quadro de hospedagem no mesmo lugar.</p></div>
+      <div class="card rev"><img class="card-foto" src="/assets/hotel-400.jpg" srcset="/assets/hotel-400.jpg 400w, /assets/hotel-600.jpg 600w" sizes="(max-width:760px) 100vw, 360px" width="600" height="877" alt="Recepcionista de colete cinza com as mãos cruzadas na recepção de um hotel" loading="lazy" decoding="async" /><h3>Flat, condo-hotel e chalés</h3><p>Operação em que o gestor aluga por conta de vários donos e precisa provar quanto cada um recebeu.</p></div>
     </div>
     <p class="rev" style="margin-top:32px;font-size:15px;color:var(--tinta-2);max-width:62ch">Atenção à convenção: alguns condomínios proíbem locação por temporada. Se o seu proíbe, este sistema não é para o seu caso.</p>
   </div>

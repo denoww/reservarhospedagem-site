@@ -35,6 +35,9 @@ paramétrico). Contato e login: dotfiles `.whatsapp` e `.login` (fonte única; o
 
 ## Pendências conhecidas
 
-- Livreto (passo 4b) e fotos geradas e julgadas (4c) ainda não existem. Site sem foto vende menos.
+- Livreto (4b) existe. Fotos (4c) no ar desde 02/10/2026: 6 vagas geradas no **Bedrock us-west-2** (Stability Ultra/Core,
+  `tools/gen_fotos.py`, ~US$ 1,32) e julgadas em `fotos/JULGAMENTO.md`. OpenAI e Gemini estavam sem crédito/cota; Nova
+  Canvas está LEGACY e Titan morreu. Pessoas brancas de aparência europeia por pedido do Rodrigo. Pendente: o livreto
+  (`build.py` `foto()`) ainda não usa as fotos, e o `og.jpg` segue o paramétrico.
 - Blog (`blog.reservarhospedagem.app`) depende da classe em `Auto::Marcas` e do cert no ALB.
 - Search Console: propriedade de domínio + sitemap.

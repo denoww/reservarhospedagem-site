@@ -10,6 +10,7 @@ exclude:
   - CLAUDE.md
   - README.md
   - tools
+  - fotos
   # gerador do livreto: a SAÍDA (livreto/index.html, livreto.pdf) é publicada; a fonte, não
   - livreto/content.py
   - livreto/build.py
