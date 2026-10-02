@@ -8,7 +8,7 @@ Candidatos ficam em `fotos/candidatos/` (gitignored). Os escolhidos estão em `a
 | vaga | cand. | nota | motivo |
 |---|---|---|---|
 | hero | 1 | 6,5 | teal mais fiel à marca, mas a chave tem gravação que parece texto e o sujeito saiu à esquerda |
-| hero | **2** | **8** | **escolhida**: mulher europeia, mão e chave limpas, sem texto; fundo teal-claro (mais frio que o #0F766E) |
+| hero | 2 | 8 | (substituída em 02/10 a pedido do Rodrigo: fundo simples demais) — mulher europeia, mão e chave limpas, sem texto; fundo teal-claro (mais frio que o #0F766E) |
 | hero | 3 | 5 | fundo branco, fora do tom da marca |
 | rosto | **1** | **8** | **escolhida**: hóspede sorri para o leitor discreto na parede; conceito claro, sem tela legível |
 | rosto | 2 | 6 | não olha o leitor, parede ciano estourada |
@@ -30,3 +30,14 @@ Nenhuma vaga ficou abaixo de 7 na escolhida, então não houve segunda rodada.
 Limites conhecidos: o Ultra devolve 1344x768 (não 2016); os fundos de estúdio saíram mais frios/claros que o
 #0F766E; pousada e hotel ganharam ambiente em vez de fundo âmbar/verde-ardósia.
 Custo real: 6 chamadas Ultra (US$ 0,84) + 12 Core (US$ 0,48) = **US$ 1,32** (`fotos/CUSTO.log`).
+
+
+## Hero — 2ª rodada (02/10/2026, pedido do Rodrigo: 'fundo mais elaborado e sofisticado')
+
+Mesma anfitriã, cenário de hotel boutique (lobby/suíte com latão, boiserie, luz quente). 3 candidatos no Ultra (US$ 0,42).
+
+| vaga | cand. | nota | motivo |
+|---|---|---|---|
+| hero | 4 | 6 | corredor com portas de madeira escura; a chave tem gravação que lembra texto; fundo pouco sofisticado |
+| hero | 5 | 6,5 | ambiente elegante (nichos com LED, arco), mas a mão ficou com o dedo apontando para baixo da chave, deformada |
+| hero | **6** | **8** | **escolhida**: suíte de hotel com abajur de latão, boiserie e arco; rosto natural, mão e chave limpas, sem texto. Menos teal que a 1ª rodada, fica no neutro quente |
