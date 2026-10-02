@@ -59,3 +59,11 @@ Gastos desta rodada: ~US$ 2,3 (4 Ultra só do leitor + 4 Ultra 'dois-shots' + 4 
 - No 'dois-shots' (hóspede + leitor) o modelo **ignora o leitor** e desenha só a pessoa (4 de 4).
 - Inpaint (`us.stability.stable-image-inpaint-v1:0`, precisa do perfil de inferência `us.`) redesenhou o leitor maior, mas saíram tablets genéricos/vazios e o rosto do hóspede mudou; reprovados.
 - **Escolhida: `rosto_leitor_3`** (só o equipamento, parede teal, rosto na tela, câmera no topo, módulo de leitura). Apaguei por pós-edição o micro-texto de marca falsa. Limitação: não tem o hóspede em cena e o aparelho tem o módulo inferior (não é 100% tela).
+
+### Foto do facial — 4ª rodada (02/10/2026): ENTRADA DO PRÉDIO + terminal moderno (referência: DS-K1T673 do print do Rodrigo)
+
+Custo da rodada ≈ US$ 2,3 (4 control-structure a US$ 0,07 + 8 Ultra a US$ 0,14; log em `CUSTO.log`). Aprendizados:
+- **Control-structure** (`us.stability.stable-image-control-structure-v1:0`) com o terminal da referência colado num canvas grande gerou **entradas de prédio ótimas, mas ignorou o aparelho e o hóspede** (aparelho pequeno demais para guiar). Depois passou a falhar com `INVALID_PAYMENT_INSTRUMENT` (assinatura AWS Marketplace do modelo, problema de cobrança da conta); Core/Ultra seguem funcionando.
+- Pedir só o terminal (Ultra, prompt descritivo SEM marca) funciona: `terminal_u4` ficou parecido com a referência (3/4, silhueta no arco azul, câmeras no topo, botão em anel). Pedir a cena de entrada + terminal junto (`entrada_t1..3`) funciona sem hóspede: `entrada_t2` é a melhor cena.
+- **Escolhida (composição)**: cena `entrada_t2` (nota 7,5: entrada de prédio, porta de vidro, hall aceso) + aparelho do `terminal_u4` (nota 7: desenho da referência) colado no lugar do aparelho original, com sombra, e micro-texto da barra apagado. Notas dos descartados: `entrada_t1` 6 (coluna alta, texto), `entrada_t3` 5 (aparelho pequeno, tela com foto de rua), `terminal_u1` 4 (texto alucinado), `terminal_u2` 5,5 (módulo de digital), `terminal_u3` 5.
+- **Limitações**: sem hóspede em cena (3 tentativas de incluir pessoa+aparelho na mesma geração fizeram o modelo ignorar o aparelho); o relógio da tela mostra '100'; a foto é composição, não imagem única.
