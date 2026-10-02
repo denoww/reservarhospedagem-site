@@ -10,6 +10,12 @@ exclude:
   - CLAUDE.md
   - README.md
   - tools
+  # gerador do livreto: a SAÍDA (livreto/index.html, livreto.pdf) é publicada; a fonte, não
+  - livreto/content.py
+  - livreto/build.py
+  - livreto/build_pdf.sh
+  - livreto/CLAUDE.md
+  - livreto/__pycache__
   - Gemfile
   - Gemfile.lock
   - vendor
