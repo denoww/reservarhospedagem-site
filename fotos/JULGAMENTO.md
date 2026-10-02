@@ -67,3 +67,12 @@ Custo da rodada ≈ US$ 2,3 (4 control-structure a US$ 0,07 + 8 Ultra a US$ 0,14
 - Pedir só o terminal (Ultra, prompt descritivo SEM marca) funciona: `terminal_u4` ficou parecido com a referência (3/4, silhueta no arco azul, câmeras no topo, botão em anel). Pedir a cena de entrada + terminal junto (`entrada_t1..3`) funciona sem hóspede: `entrada_t2` é a melhor cena.
 - **Escolhida (composição)**: cena `entrada_t2` (nota 7,5: entrada de prédio, porta de vidro, hall aceso) + aparelho do `terminal_u4` (nota 7: desenho da referência) colado no lugar do aparelho original, com sombra, e micro-texto da barra apagado. Notas dos descartados: `entrada_t1` 6 (coluna alta, texto), `entrada_t3` 5 (aparelho pequeno, tela com foto de rua), `terminal_u1` 4 (texto alucinado), `terminal_u2` 5,5 (módulo de digital), `terminal_u3` 5.
 - **Limitações**: sem hóspede em cena (3 tentativas de incluir pessoa+aparelho na mesma geração fizeram o modelo ignorar o aparelho); o relógio da tela mostra '100'; a foto é composição, não imagem única.
+
+### Foto do facial — 5ª rodada (02/10/2026): aparelho 20% menor e tela chamativa
+
+Pedido: 'diminua em 20% o equipamento e melhore a foto da tela — o atual é da foto original, queremos algo mais chamativo'.
+- Aparelho reduzido de 477 px para 382 px de altura (×0,80), reconstruído **de frente** (o original estava em 3/4 e a cena é frontal): vidro alinhado, moldura prata simétrica, base com grade de alto-falante desenhada.
+- **Tela redesenhada** (`tools/compor_entrada.py`, `tela_ui`): gradiente violeta→azul vívido, retrato de um homem europeu (`tela_retrato_2`, Core, US$ 0,04) em moldura neon ciano→magenta com cantos verdes, selo verde 'Acesso liberado', 'Bem-vindo!', relógio. Texto desenhado por nós, legível e em português.
+- Parede limpa estendendo uma faixa limpa da pedra (listras horizontais); 1ª tentativa deixou a borda do aparelho antigo transparecer (margem estreita) — corrigido alargando o remendo; halo violeta suavizado.
+- Custo: US$ 0,08 (2 retratos). A composição é local e reproduzível: `python3 tools/compor_entrada.py`.
+- Limitações: continua sem o hóspede em cena; o rosto na tela é um retrato gerado (não identifica ninguém).
