@@ -62,3 +62,11 @@ sistema realmente envia, em que momento).
     #ganha. Se o piloto virar produção, remover.
 17. **Limpeza no checkout:** o texto agora diz "no horário do checkout registrado" (o livreto admite que a leitura real da
     saída pelo acesso ainda não dispara a limpeza — Onda 4.5 do roadmap operacional).
+
+
+## Respondido pelo Rodrigo em 02/10/2026 (já refletido no site)
+
+- **Senha da fechadura:** será um **botão de template do WhatsApp**. **Ainda não está pronto**; será construído quando aparecer lead pedindo.
+  O site diz "sob demanda, combinado na implantação; ainda não é um recurso pronto". Quando existir, trocar o texto.
+- **Equipamento facial:** modelos **entre R$ 2 mil e R$ 3 mil** (valor do aparelho). **Instalação e mensalidade da portaria seguem sem definição**
+  — o site diz que entram na proposta pelo WhatsApp.

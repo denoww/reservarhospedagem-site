@@ -46,7 +46,7 @@ BOARDS = {
         ("calendario", "O hóspede pede",       "Escolhe as noites no site e envia o pedido com documento e foto."),
         ("balcao",     "A recepção confirma",  "Atribui a unidade e confirma. O pedido vira reserva."),
         ("face",       "O acesso nasce",       "Confirmada a reserva, o facial libera a entrada do prédio durante a estadia."),
-        ("porta",      "Entra no prédio e no quarto", "Facial na entrada; no quarto, a senha da fechadura ou a chave com o porteiro."),
+        ("porta",      "Entra no prédio e no quarto", "Facial na entrada; no quarto, a chave com o porteiro ou, sob demanda, a senha da fechadura."),
         ("vassoura",   "No checkout, a limpeza dispara", "No horário registrado, a tarefa vai para a camareira."),
         ("chave",      "Unidade pronta",       "Vistoriada, volta para a venda."),
     ]),
@@ -132,8 +132,8 @@ ESTADIA_CARDS = [
      "A liberação facial do hóspede vale para a estadia, no equipamento de controle de acesso do "
      "condomínio, na entrada do prédio. Passou do prazo, deixa de abrir.", ""),
     ("Porta do quarto: senha ou chave",
-     "O sistema envia a senha da fechadura ao hóspede. Se o prédio tem porteiro, é o porteiro "
-     "quem entrega a chave do quarto.", ""),
+     "Com porteiro, é ele quem entrega a chave do quarto. Sem porteiro, a senha da fechadura pode ir "
+     "ao hóspede pelo WhatsApp, feito sob demanda e combinado na implantação (ainda não é um recurso pronto).", ""),
     ("Cadastro antes de chegar",
      "O hóspede preenche documento e foto por um link, antes de chegar. Na chegada, ele entra com "
      "o rosto na portaria, sem passar pela recepção.", ""),
@@ -276,7 +276,7 @@ TILES = [
     ("Preço por tipo",      "Tarifa base, temporada, fim de semana e estadia mínima.",     "terra",    ""),
     ("Reserva no balcão",   "Orçamento congelado e unidade atribuída na confirmação.",    "terra",    ""),
     ("Site de reservas",    "Faixa de noites, ficha por tipo e pedido em três passos.",   "terra",    "piloto"),
-    ("Acesso por estadia",  "Facial na entrada do prédio; senha da fechadura ou chave no quarto.", "petroleo", ""),
+    ("Acesso por estadia",  "Facial na entrada do prédio; chave com o porteiro ou, sob demanda, senha da fechadura no quarto.", "petroleo", ""),
     ("Limpeza no checkout", "Tarefa, checklist com foto e vistoria à distância.",         "ambar",    ""),
     ("Quadro e mapa",       "Ocupação, estado das unidades e reservas no mesmo lugar.",   "petroleo", ""),
     ("Acerto com o dono",   "Bruto, limpeza, retenção e líquido, com PDF e chave PIX.",   "ambar",    "piloto"),
