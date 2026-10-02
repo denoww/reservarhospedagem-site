@@ -1,0 +1,53 @@
+{
+  "_aviso": "FONTE ÚNICA do llms.txt (tools/gerar_llms.py). Fatos de Auto::Marcas::Reservarhospedagem (ERP) + decisões do Rodrigo de 02/10/2026. O registro do ERP ainda diz 'preço em definição' (precos/nao_features) — DESATUALIZADO frente a esta tabela; ao corrigir o ERP, mantenha os dois iguais.",
+  "nome": "reservarhospedagem",
+  "tagline": "Receba reservas no seu canal e entregue o apartamento pronto.",
+  "site": "https://www.reservarhospedagem.app/",
+  "login": "https://app.reservarhospedagem.app/logar",
+  "blog": "https://blog.reservarhospedagem.app/",
+  "livreto": "https://www.reservarhospedagem.app/livreto/",
+  "familia": "Parte do Seu Condomínio: o mesmo ERP, com várias marcas. O módulo de hospedagem roda no sistema que já administra a portaria de condomínios.",
+  "para_quem": "Síndico e administradora de condomínio que opera ou quer operar apartamentos de temporada (Airbnb), e o proprietário que aluga a unidade. Dono ou gerente de pousada, flat, condo-hotel e hotel pequeno que usa planilha ou um sistema que não dá conta. Condomínio cuja convenção proíbe locação por temporada não é o público.",
+  "estado": "Em operação em um condomínio piloto de temporada. O site de reservas e o acerto com o proprietário são marcados como piloto.",
+  "faz": [
+    "Cada acomodação é cadastrada como um tipo (nome, fotos, comodidades, capacidade) e as unidades reais são vinculadas a ele; vende-se por tipo e a unidade é atribuída depois.",
+    "O preço vem de regras: diária base, tarifas por temporada ou por dia da semana, estadia mínima, valor por hóspede adicional e taxa de limpeza por estadia. O orçamento fica congelado na reserva.",
+    "A disponibilidade cruza estadias e bloqueios (manutenção, uso do proprietário); o sistema recusa duas estadias sobrepostas na mesma unidade.",
+    "Site de reservas próprio, no endereço do condomínio ou da pousada, renderizado no servidor, com acomodações, fotos, datas, valor, política de cancelamento, regras da casa e perguntas frequentes.",
+    "O hóspede faz o pedido em três passos; o pedido entra como pré-reserva e a equipe confirma no sistema. A cobrança segue o fluxo que o condomínio já tem.",
+    "O hóspede acompanha o pedido por um link pessoal e pode enviar documento e foto antes da chegada.",
+    "A limpeza é disparada pelo horário de checkout registrado: a camareira usa um checklist com foto, e a unidade passa por suja, limpa e vistoriada antes de voltar à venda.",
+    "Mapa de reservas por dia, com bloqueios, e quadro de hospedagem com a ocupação.",
+    "Relatório de acerto por proprietário, em PDF: reservas do período, receita bruta, taxa de limpeza, retenção do condomínio (percentual informado na tela), líquido a repassar e a chave PIX do proprietário."
+  ],
+  "acesso": [
+    "O reconhecimento facial fica na ENTRADA DO PRÉDIO e libera o hóspede durante a estadia, quando o condomínio tem controle de acesso facial na portaria.",
+    "O facial NÃO abre a porta do apartamento ou do quarto.",
+    "Na porta do quarto, havendo porteiro físico, o porteiro entrega a chave do quarto.",
+    "A senha da fechadura enviada ao hóspede por um botão de template do WhatsApp AINDA NÃO EXISTE: será construída sob demanda, quando houver cliente pedindo, sem data prometida.",
+    "Equipamento facial: os modelos custam entre R$ 2 mil e R$ 3 mil (valor do aparelho). Instalação e mensalidade da portaria não estão definidas e entram na proposta feita pela equipe. Sem o equipamento, o resto do sistema funciona."
+  ],
+  "preco": {
+    "modelo": "Por unidade ativa por mês. Sem taxa de implantação, sem fidelidade e sem comissão sobre as reservas.",
+    "faixas": [
+      "As 2 primeiras unidades: grátis.",
+      "Da 3ª à 10ª unidade: R$ 4,90 por unidade por mês.",
+      "Da 11ª à 30ª unidade: R$ 2,90 por unidade por mês.",
+      "A partir da 31ª unidade: R$ 1,90 por unidade por mês."
+    ],
+    "unidade_ativa": "Unidade ativa é a ligada a um tipo de acomodação publicado e à venda em pelo menos um dia do mês. Um condomínio com 80 apartamentos e 6 no Airbnb paga por 6.",
+    "exemplos": "6 unidades ativas pagam R$ 19,60 por mês; 10 pagam R$ 39,20; 30 pagam R$ 97,20.",
+    "nota": "A medição e a cobrança por unidade ativa ainda não são automáticas no sistema; a cobrança é combinada com a equipe."
+  },
+  "nao_faz": [
+    "NÃO existe sincronização com Airbnb, Booking, Decolar ou qualquer outro canal: sem iCal, sem channel manager e sem importação automática de reservas. A reserva que vem de uma plataforma é lançada no balcão.",
+    "NÃO existe pagamento online no site: o pedido é uma pré-reserva e a equipe confirma.",
+    "NÃO existe divisão automática do pagamento entre condomínio e proprietário.",
+    "NÃO existe marketplace, conta de hóspede, programa de pontos, cupom de retorno nem avaliação pós-estadia.",
+    "NÃO existe aplicativo próprio para o hóspede nem para o gestor.",
+    "NÃO emite a ficha nacional de registro de hóspedes (FNRH).",
+    "A saída real do hóspede lida pelo controle de acesso ainda não dispara a limpeza; vale o horário de checkout registrado.",
+    "NÃO se promete aumento de ocupação, de faturamento nem economia em reais com comissão."
+  ],
+  "lgpd": "O rosto do hóspede é dado sensível. O prazo de apagamento da foto ainda não está definido; o texto de consentimento deve ser validado com o jurídico do condomínio."
+}

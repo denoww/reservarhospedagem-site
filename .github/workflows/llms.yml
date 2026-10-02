@@ -1,0 +1,23 @@
+# Guarda do llms.txt: gerado de tools/marca.json, preços iguais aos da home.
+#
+# POR QUE É UM WORKFLOW À PARTE: o `.github/scripts/seo.py` é byte a byte igual nos 4 sites da casa; esta
+# invariante é só da reservarhospedagem. O llms.txt escrito à mão deriva (nos outros sites derivou em < 24 h).
+name: llms.txt (gerado, sem deriva)
+
+on:
+  push:
+    branches: [main]
+    paths: [llms.txt, tools/marca.json, tools/gerar_llms.py, tools/conferir_llms.py, index.html, .github/workflows/llms.yml]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  llms:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: llms.txt bate com a fonte e com a home
+        run: python3 tools/conferir_llms.py
